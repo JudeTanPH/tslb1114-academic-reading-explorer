@@ -216,3 +216,35 @@ th{background:#eef6f5;color:var(--navy)}
 @media(max-width:620px){
  .article-source-actions{flex-direction:column}
 }
+
+/* Real journal quartile and deceptive-publishing comparison */
+.real-journal-lab{margin-top:24px;background:linear-gradient(145deg,#ffffff,#f7faf9);border:1px solid #dbe7e5;border-radius:22px;padding:22px}
+.real-journal-head h3{margin:.55rem 0 .4rem}
+.quartile-case-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.journal-case{background:white;border:1px solid #dce6e5;border-radius:16px;padding:16px;min-width:0}
+.journal-case h4{margin:10px 0 8px;color:var(--navy);font-size:1rem}
+.journal-case-top{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.quartile-label{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;font-weight:900;color:#0b1f33}
+.q1case .quartile-label{background:#cfeedd}
+.q2case .quartile-label{background:#e3f0c6}
+.q3case .quartile-label{background:#fff0bf}
+.q4case .quartile-label{background:#f7d6d2}
+.country-label{font-size:.72rem;padding:4px 8px;border-radius:999px;background:#f2f5f5;color:#596b75;font-weight:800}
+.case-lesson{font-size:.88rem;background:#f7faf9;border-left:3px solid var(--teal);padding:10px;border-radius:0 9px 9px 0}
+.case-links{display:flex;gap:10px;flex-wrap:wrap}
+.case-links a{color:#0c6b6d;text-decoration:none;font-weight:800;font-size:.84rem}
+.case-links a:hover{text-decoration:underline}
+.category-warning{margin-top:14px;padding:14px 16px;border-radius:14px;background:#fff8e7;border:1px solid #efd99c}
+.documented-cases{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.warning-case{background:#fff;border:1px solid #ead9d9;border-radius:16px;padding:17px}
+.warning-case h4{margin:10px 0 8px;color:var(--navy)}
+.warning-head{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;color:#6b7880;font-size:.78rem;font-weight:800}
+.warning-label{display:inline-flex;padding:5px 9px;border-radius:999px;background:#fbe8e8;color:#8b3438;border:1px solid #edc8ca;text-transform:uppercase;letter-spacing:.04em}
+.error-samples{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.error-samples span{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#fff4f2;border:1px solid #efcfcb;border-radius:9px;padding:6px 8px;font-size:.82rem}
+@media(max-width:1050px){
+ .quartile-case-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+ .quartile-case-grid,.documented-cases{grid-template-columns:1fr}
+}
