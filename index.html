@@ -14,7 +14,7 @@
     <a class="brand" href="#home"><span class="brandmark">AR</span>TSLB1114 Reading Explorer</a>
     <nav class="navlinks" aria-label="Main navigation">
       <a href="#map">Topic map</a><a href="#texts">Text types</a><a href="#critical">Critical reading</a>
-      <a href="#credibility">Source credibility</a><a href="#synthesis">Synthesis</a><a href="#challenge">Challenge</a>
+      <a href="#credibility">Source credibility</a><a href="#synthesis">Synthesis</a><a href="#article-lab">Article lab</a><a href="#challenge">Challenge</a>
     </nav>
     <button class="reset" id="resetProgress">Reset progress</button>
   </div>
@@ -315,9 +315,49 @@
  </div>
 </section>
 
-<section class="section" id="challenge">
+<section class="section" id="article-lab">
  <div class="wrap">
-  <span class="kicker">6. Challenge quiz</span>
+  <span class="kicker">6. Article application lab</span>
+  <h2>Apply every Topic 3 reading skill to one real academic article.</h2>
+  <p class="section-intro">Use Jude Tan's conference paper on assessment moderation as the common text. The questions move from identifying text structure to analysing evidence, source relationships, writer stance, summary and synthesis.</p>
+
+  <div class="article-source-card">
+   <div>
+    <span class="example-badge">Core reading</span>
+    <h3>Incorporating Assessment Moderation in the Malaysian Classroom-Based Assessment (CBA) Teacher Training Module</h3>
+    <p><b>Tan (2023)</b>, Proceedings of the 3rd International Conference on Education and Technology (ICETECH 2022), pp. 323–336.</p>
+    <p class="note">Suggested approach: read the abstract first, scan the headings and figures, then return to relevant sections while answering. The task is not to memorise the article, but to apply academic reading strategies to it.</p>
+   </div>
+   <div class="article-source-actions">
+    <a class="btn primary" target="_blank" rel="noopener" href="https://www.atlantis-press.com/proceedings/icetech-22/125989122">Open article page ↗</a>
+    <a class="btn secondary" target="_blank" rel="noopener" href="https://www.atlantis-press.com/article/125989122.pdf">Open PDF ↗</a>
+    <a class="btn secondary" target="_blank" rel="noopener" href="https://doi.org/10.2991/978-2-38476-056-5_35">Open DOI ↗</a>
+   </div>
+  </div>
+
+  <div class="skill-map">
+   <span>Linear / non-linear texts</span><span>Text type</span><span>Fact / opinion</span><span>Bias / objectivity</span>
+   <span>Arguments</span><span>Tone / purpose / POV</span><span>Text processing</span><span>Linking across texts</span>
+   <span>Summarising</span><span>Synthesising</span><span>Source credibility</span>
+  </div>
+
+  <div class="quiz-wrap article-quiz-wrap">
+   <div class="quiz-card">
+    <div class="quiz-progress"><span id="articleQuizProgress"></span></div>
+    <div id="articleQuizArea"></div>
+   </div>
+   <aside class="score-card article-score-card">
+    <span>Article lab score</span><strong id="articleScore">0 / 16</strong>
+    <p id="articleScoreMsg">Use the article as evidence. Re-read strategically when needed.</p>
+    <button class="btn secondary" id="restartArticleQuiz">Restart article lab</button>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="section alt" id="challenge">
+ <div class="wrap">
+  <span class="kicker">7. Challenge quiz</span>
   <h2>Can you defend your reading decisions?</h2>
   <p class="section-intro">Ten questions, instant explanations. Your progress is stored only in this browser.</p>
   <div class="quiz-wrap">
@@ -336,7 +376,7 @@
 
 <section class="section alt" id="resources">
  <div class="wrap">
-  <span class="kicker">7. Verification tools</span>
+  <span class="kicker">8. Verification tools</span>
   <h2>Check the evidence at the source.</h2>
   <p class="section-intro">These tools answer different questions. None of them, by itself, can prove that an individual article is methodologically strong.</p>
   <div class="resource-grid">
