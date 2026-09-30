@@ -196,3 +196,23 @@ th{background:#eef6f5;color:var(--navy)}
 @media(max-width:620px){
  .example-grid,.argument-example,.linked-reading-grid{grid-template-columns:1fr}
 }
+
+/* Article application lab */
+.article-source-card{margin:26px 0 16px;background:linear-gradient(145deg,#0f2b43,#123c51);color:white;border-radius:24px;padding:24px;display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:center}
+.article-source-card h3{color:white;margin:.55rem 0 .45rem;font-size:1.35rem}
+.article-source-card .note{color:#c7d8df}
+.article-source-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.article-source-actions .btn{justify-content:center}
+.article-source-actions .secondary{background:white}
+.skill-map{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.skill-map span,.skill-pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 10px;background:#eaf5f3;color:#0d6668;border:1px solid #cde5e1;font-size:.75rem;font-weight:900}
+.quiz-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.article-quiz-wrap{margin-top:18px}
+.article-score-card{background:linear-gradient(160deg,#0b1f33,#123f51)}
+@media(max-width:920px){
+ .article-source-card{grid-template-columns:1fr}
+ .article-source-actions{flex-direction:row;flex-wrap:wrap}
+}
+@media(max-width:620px){
+ .article-source-actions{flex-direction:column}
+}
