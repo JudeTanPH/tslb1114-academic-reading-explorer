@@ -215,4 +215,35 @@ function finishQuiz(){
 $('#restartQuiz').onclick=()=>{qi=0;score=0;$('#score').textContent='0 / 10';$('#scoreMsg').textContent='Answer the questions using evidence, not shortcuts.';renderQuiz()};
 renderQuiz();
 
-$('#resetProgress').onclick=()=>{localStorage.removeItem('tslb1114_score');localStorage.removeItem('tslb1114_complete');qi=0;score=0;$('#score').textContent='0 / 10';renderQuiz();window.scrollTo({top:0,behavior:'smooth'})};
+$('#resetProgress').onclick=()=>{localStorage.removeItem('tslb1114_score');localStorage.removeItem('tslb1114_complete');localStorage.removeItem('tslb1114_article_score');localStorage.removeItem('tslb1114_article_complete');qi=0;score=0;aqIndex=0;aqScore=0;$('#score').textContent='0 / 10';$('#scoreMsg').textContent='Answer the questions using evidence, not shortcuts.';$('#articleScore').textContent='0 / '+articleQuiz.length;$('#articleScoreMsg').textContent='Use the article as evidence. Re-read strategically when needed.';renderQuiz();renderArticleQuiz();const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:reduce?'auto':'smooth'})};
+
+
+/* Design-engineering enhancements: navigation context and accessible live feedback */
+(()=>{
+ const navLinks=$$('.navlinks a[href^="#"]');
+ const sections=navLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+ const setActive=id=>{
+   navLinks.forEach(link=>{
+     const active=link.getAttribute('href')==='#'+id;
+     link.classList.toggle('is-active',active);
+     if(active)link.setAttribute('aria-current','page');
+     else link.removeAttribute('aria-current');
+   });
+ };
+ if('IntersectionObserver' in window && sections.length){
+   const visible=new Map();
+   const observer=new IntersectionObserver(entries=>{
+     entries.forEach(entry=>visible.set(entry.target.id,entry.intersectionRatio));
+     const best=[...visible.entries()].sort((a,b)=>b[1]-a[1])[0];
+     if(best&&best[1]>0)setActive(best[0]);
+   },{rootMargin:'-18% 0px -68% 0px',threshold:[0,.12,.3,.55]});
+   sections.forEach(section=>observer.observe(section));
+ }else if(sections[0]){
+   setActive(sections[0].id);
+ }
+ navLinks.forEach(link=>link.addEventListener('click',()=>{
+   const id=link.getAttribute('href').slice(1);
+   if(id)setActive(id);
+ }));
+ $$('.feedback,.explain,.decision-output').forEach(el=>el.setAttribute('aria-live','polite'));
+})();
