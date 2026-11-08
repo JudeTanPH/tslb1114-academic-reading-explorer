@@ -57,6 +57,55 @@
 .lesson-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .lesson-links a { color: #125d61; font-weight: 650; }
 .lesson-practice > summary, .source-group > summary { cursor: pointer; color: #125d61; font-weight: 750; }
+.writing-figure {
+  max-width: 920px; margin: 24px 0; padding: clamp(14px, 3vw, 24px); scroll-margin-top: 96px;
+  border: 1px solid var(--line); border-radius: 16px; background: #f4f8f7; color: var(--ink);
+}
+.writing-figure figcaption { margin-bottom: 14px; color: var(--navy); font-size: 1.1rem; }
+.writing-figure .figure-flow, .writing-figure .figure-annotated {
+  list-style: none; padding: 0; margin: 0;
+}
+.figure-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.figure-flow-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.writing-figure .figure-flow li {
+  position: relative; min-width: 0; margin: 0; padding: 12px;
+  border: 1px solid var(--line); border-radius: 10px; background: #fff;
+}
+.figure-flow li:not(:last-child)::after {
+  content: ""; position: absolute; top: calc(50% - 5px); right: -17px;
+  width: 8px; height: 8px; border-top: 2px solid var(--teal); border-right: 2px solid var(--teal);
+  transform: rotate(45deg);
+}
+.figure-tag {
+  display: block; color: #125d61; font-weight: 800; font-size: .72rem;
+  letter-spacing: .045em; line-height: 1.45; text-transform: uppercase;
+}
+.figure-flow li > strong { display: block; margin: 6px 0 4px; color: var(--navy); line-height: 1.4; }
+.figure-flow li > span:last-child, .figure-note, .figure-return { font-size: .9rem; }
+.writing-figure .figure-flow .figure-caution { border-color: #e0c894; background: #fff9ed; }
+.figure-caution .figure-tag { color: #795000; }
+.writing-figure .figure-note { margin: 12px 0 0; color: var(--muted); }
+.writing-figure .figure-return {
+  display: flex; align-items: baseline; gap: 8px; max-width: none;
+  margin: 14px 0 0; padding-top: 10px; border-top: 1px dashed #87b5b0;
+}
+.figure-return > span:first-child { color: #125d61; font-size: 1.3rem; font-weight: 800; }
+.writing-figure .figure-annotated li {
+  display: grid; grid-template-columns: minmax(7rem, 10rem) minmax(0, 1fr); align-items: baseline; gap: 12px;
+  margin: 0; padding: 10px 12px; border-bottom: 1px solid var(--line); background: #fff;
+}
+.figure-annotated li:first-child { border-radius: 10px 10px 0 0; }
+.writing-figure .figure-annotated li:last-child { border-radius: 0 0 10px 10px; border-bottom: 0; }
+.figure-annotated li > span { border-left: 3px solid var(--teal); padding-left: 8px; color: var(--navy); }
+.figure-annotated small { display: block; color: var(--muted); }
+.writing-figure .figure-annotated p { margin: 0; }
+.citation-figure { background: #fff; }
+.citation-row { padding: 10px 12px; border-radius: 8px; background: var(--soft); }
+.citation-row p { margin: 4px 0 0; }
+.citation-arrow { display: block; margin: 3px 12px; color: #125d61; font-size: 1.25rem; font-weight: 800; }
+.citation-authors, .citation-year { font-weight: 700; box-decoration-break: clone; }
+.citation-authors { background: #daeee9; color: #125653; }
+.citation-year { background: #f9eaca; color: #634200; }
 .source-group { max-width: 920px; }
 .source-group p { margin-block: 12px; }
 .source-group .reference-entry + .reference-entry { border-top: 1px solid var(--line); padding-top: 12px; }
@@ -81,11 +130,24 @@
 .note-definitions dd { margin: 4px 0 12px; }
 .note-sources li { margin-block: 8px; }
 
+@media (max-width: 840px) {
+  .figure-flow-four { grid-template-columns: 1fr; gap: 20px; }
+  .figure-flow-four li:not(:last-child)::after {
+    top: auto; right: auto; bottom: -13px; left: 18px; transform: rotate(135deg);
+  }
+}
+
 @media (max-width: 700px) {
   .study-grid { grid-template-columns: 1fr; }
   .study-table th, .study-table td { padding: 6px; }
   .lesson-terms { grid-template-columns: 1fr; gap: 4px; }
   .lesson-terms dd + dt { margin-top: 8px; }
+  .writing-figure { scroll-margin-top: 120px; }
+  .figure-flow { grid-template-columns: 1fr; gap: 20px; }
+  .figure-flow li:not(:last-child)::after {
+    top: auto; right: auto; bottom: -13px; left: 18px; transform: rotate(135deg);
+  }
+  .writing-figure .figure-annotated li { grid-template-columns: 1fr; gap: 5px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
