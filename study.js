@@ -54,6 +54,30 @@
         answer: 3,
         reason: 'The table is the grammatical subject. The wording reports the observed comparison directly.',
       },
+      {
+        title: 'Choose a precise reporting verb',
+        prompt: 'Source A describes what volunteers said after rehearsing. Which sentence preserves how the evidence was collected?',
+        options: [
+          'Nine volunteers reported feeling more confident about giving directions.',
+          'Observers recorded greater confidence in nine rehearsed sessions.',
+          'Nine trainees demonstrated better instruction after rehearsing.',
+          'The survey measured an increase from nine trainees’ earlier ratings.',
+        ],
+        answer: 0,
+        reason: '“Reported” identifies the result as a self-report. The survey included no observer ratings or baseline confidence measure.',
+      },
+      {
+        title: 'Calibrate the claim',
+        prompt: 'Source B shows a one-session difference between groups with no comparable baseline. Which sentence matches that evidence?',
+        options: [
+          'Rehearsal clearly improved transitions across both groups.',
+          'The two groups achieved equal results in observed transitions.',
+          'The table shows a small difference in observed transitions.',
+          'The difference shows that trainees felt better prepared.',
+        ],
+        answer: 2,
+        reason: 'The table describes observed performance. The group comparison does not establish what caused the difference or what trainees felt.',
+      },
     ],
     apa: [
       {
@@ -80,6 +104,30 @@
         answer: 2,
         reason: 'The entry preserves both authors, the publication order and the 2019 date.',
       },
+      {
+        title: 'Cite three authors',
+        prompt: 'Which APA 7 parenthetical citation fits the first mention of the 2009 article by Bråten, Strømsø and Britt?',
+        options: [
+          '(Bråten, Strømsø, & Britt, 2009)',
+          '(Bråten et al., 2009)',
+          '(Bråten & Britt, 2009)',
+          '(Bråten and colleagues, 2009)',
+        ],
+        answer: 1,
+        reason: 'Use the first author’s surname followed by “et al.” and the year for this work. The reference entry records all three authors.',
+      },
+      {
+        title: 'Make a quotation traceable',
+        prompt: 'You quote eight words exactly from page 24 of List and Alexander’s article. What should accompany the quotation?',
+        options: [
+          'Quotation marks and both authors’ surnames.',
+          'The authors, year and full journal title.',
+          'Block indentation and the year and page.',
+          'Quotation marks and the authors, year and page.',
+        ],
+        answer: 3,
+        reason: 'A short direct quotation needs quotation marks, attribution and a locator. The page number points to the exact passage.',
+      },
     ],
     process: [
       {
@@ -105,6 +153,30 @@
         ],
         answer: 3,
         reason: 'The problem is the scope of the claim. Fix the reasoning before polishing sentence-level details.',
+      },
+      {
+        title: 'Plan evidence for the audience',
+        prompt: 'A teacher educator asks whether to make rehearsal compulsory. Which plan gives that reader the most useful basis for a decision?',
+        options: [
+          'Compare perceived readiness with observed performance and consider the limitations of each measure.',
+          'Describe what peer rehearsal is, then list the steps in a rehearsal session.',
+          'Use the confidence survey to estimate how many trainees will teach more effectively.',
+          'Summarise each source separately and leave the judgement for the reader.',
+        ],
+        answer: 0,
+        reason: 'An evaluation needs criteria, comparison and a reasoned judgement. The two outcomes give different information about the proposed requirement.',
+      },
+      {
+        title: 'Explain how the evidence supports the point',
+        prompt: 'Your point is that rehearsal may be worth offering to help trainees feel prepared. Which sentence best explains the survey’s relevance?',
+        options: [
+          'The survey records nine volunteers’ responses after a rehearsal session.',
+          'Source B recorded six clear transitions in twelve rehearsed sessions.',
+          'Reported confidence addresses how ready trainees felt to give directions.',
+          'The two sources concern the same programme and use numerical results.',
+        ],
+        answer: 2,
+        reason: 'This explanation connects the survey measure to the claim about perceived readiness. The counts and source descriptions supply evidence but do not explain the connection.',
       },
     ],
   };
