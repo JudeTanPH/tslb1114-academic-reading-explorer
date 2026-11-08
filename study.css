@@ -1,0 +1,84 @@
+.skip-link {
+  position: fixed; z-index: 100; top: 8px; left: 16px; padding: 8px 16px;
+  color: var(--navy); background: white; transform: translateY(-160%);
+}
+.skip-link:focus { transform: none; }
+:focus-visible { outline: 3px solid #147d7e; outline-offset: 4px; }
+.topbar :focus-visible { outline-color: #fff; }
+[hidden] { display: none !important; }
+.section[id], .note-topic[id] { scroll-margin-top: 88px; }
+
+.study-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.study-block, .study-checks { margin-top: 24px; }
+.study-source, .study-exercise { min-width: 0; }
+.study-note { color: var(--muted); font-size: .875rem; }
+.study-label { display: block; font-weight: 650; margin-block: 12px 4px; }
+.study-input {
+  display: block; width: 100%; padding: 12px; border: 1px solid #8ca3a8;
+  border-radius: 8px; color: var(--ink); background: #fff; font: inherit; resize: vertical;
+}
+.study-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.study-table caption { text-align: left; font-weight: 700; padding-bottom: 8px; }
+.study-table th, .study-table td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; }
+.study-table thead th { background: var(--soft); color: var(--navy); }
+.study-table tbody td { font-variant-numeric: tabular-nums; }
+.study-exercise fieldset { border: 0; padding: 0; margin: 0 0 12px; min-width: 0; }
+.study-exercise legend { padding: 0 0 8px; font-weight: 700; }
+.study-choice, .study-checklist label { display: flex; gap: 8px; align-items: baseline; padding-block: 6px; cursor: pointer; }
+.study-choice input, .study-checklist input { flex: 0 0 auto; accent-color: var(--teal); }
+.study-feedback { margin: 12px 0 0; }
+.study-feedback:empty { display: none; }
+.study-feedback[data-result] { border-radius: 8px; padding: 8px 12px; }
+.study-feedback[data-result="correct"] { color: #145437; background: #e9f5ec; }
+.study-feedback[data-result="review"] { color: #684004; background: #fff3d9; }
+.study-model { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
+.study-model summary, #carried-synthesis summary { cursor: pointer; color: #125d61; font-weight: 750; }
+.student-response { white-space: pre-wrap; overflow-wrap: anywhere; }
+.study-footer { padding: 24px 0; color: var(--muted); border-top: 1px solid var(--line); }
+.study-footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; }
+.study-footer-inner p { margin: 0; }
+.study-footer nav { display: flex; flex-wrap: wrap; gap: 12px 16px; }
+.reference-entry { padding-left: 24px; text-indent: -24px; overflow-wrap: anywhere; }
+.course-hero { position: relative; }
+.course-hero .lead { max-width: 58ch; margin-bottom: 0; }
+.course-grid { margin-top: 24px; }
+.course-topic { display: flex; align-items: flex-start; flex-direction: column; }
+.course-topic p:not(.kicker) { flex: 1; }
+
+.note-sheet { max-width: 880px; padding: 48px 0 64px; }
+.notes-heading, .note-topic, .note-sources {
+  background: #fff; border: 1px solid var(--line); padding: clamp(24px, 5vw, 48px); border-radius: 16px;
+}
+.notes-heading h1 { font-size: clamp(2.25rem, 6vw, 4.5rem); }
+.notes-heading .lead { max-width: 60ch; }
+.note-topic, .note-sources { margin-top: 24px; }
+.note-topic h2, .note-sources h2 { margin: 4px 0 12px; }
+.note-topic h3 { margin: 0 0 12px; color: var(--navy); }
+.note-topic h4 { margin: 16px 0 4px; }
+.note-topic section { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--line); }
+.note-definitions dt { margin-top: 12px; font-weight: 750; }
+.note-definitions dd { margin: 4px 0 12px; }
+.note-sources li { margin-block: 8px; }
+
+@media (max-width: 700px) {
+  .study-grid { grid-template-columns: 1fr; }
+  .study-table th, .study-table td { padding: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  @page { size: A4; margin: 16mm; }
+  .notes-page { background: #fff; color: #111; font-size: 10.5pt; line-height: 1.45; }
+  .notes-page .topbar, .notes-page .skip-link, .notes-page .no-print { display: none; }
+  .note-sheet { width: 100%; max-width: none; padding: 0; }
+  .notes-heading, .note-topic, .note-sources { border: 0; padding: 0; }
+  .notes-heading h1 { font-size: 26pt; }
+  .note-topic h2, .note-sources h2 { font-size: 19pt; }
+  .note-topic section { padding-top: 12px; }
+  .note-topic + .note-topic { break-before: page; }
+  .note-sheet h1, .note-sheet h2, .note-sheet h3, .note-sheet h4, .note-sheet dt { break-after: avoid; }
+  .note-sheet p, .note-sheet dd { orphans: 2; widows: 2; }
+}

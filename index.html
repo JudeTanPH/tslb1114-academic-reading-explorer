@@ -6,14 +6,17 @@
 <title>TSLB1114 Academic Reading Explorer</title>
 <meta name="description" content="Interactive student learning website for TSLB1114 Topic 3: Academic Reading." />
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="study.css">
+<script src="study.js" defer></script>
 
 </head>
-<body>
+<body class="reading-page">
+<a class="skip-link" href="#reading-main">Skip to Reading Explorer</a>
 <header class="topbar">
   <div class="wrap nav">
     <a class="brand" href="#home"><span class="brandmark">AR</span>TSLB1114 Reading Explorer</a>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#map">Topic map</a><a href="#texts">Text types</a><a href="#critical">Critical reading</a>
+      <a href="course.html">Course hub</a><a href="#map">Topic map</a><a href="#source-pair">Paired texts</a><a href="#texts">Text types</a><a href="#critical">Critical reading</a>
       <a href="#credibility">Source credibility</a><a href="#synthesis">Synthesis</a><a href="#article-lab">Article lab</a><a href="#challenge">Challenge</a>
     </nav>
     <button class="reset" id="resetProgress">Reset progress</button>
@@ -21,7 +24,7 @@
   <div class="progressbar"><span id="scrollProgress"></span></div>
 </header>
 
-<main>
+<main id="reading-main" tabindex="-1">
 <section class="hero" id="home">
  <div class="wrap hero-grid">
   <div>
@@ -30,7 +33,8 @@
    <p class="lead">Move beyond “finding information”. Analyse what a text is doing, how a claim is supported, how sources relate, and how much confidence the evidence deserves.</p>
    <div class="hero-actions">
     <a class="btn primary" href="#map">Start exploring</a>
-    <a class="btn secondary" href="#credibility">Source Credibility Lab</a>
+    <a class="btn secondary" href="lecture-notes.html#topic-3">Revised lecture notes</a>
+    <a class="btn secondary" href="writing.html">Topic 4 · Academic Writing</a>
    </div>
    <p class="note">PPISMP 2026–2027 · CLO2: Analyse critically a variety of academic texts (C4, PLO2, KKG2).</p>
   </div>
@@ -81,6 +85,25 @@
     </article>
    </div>
   </div>
+ </div>
+</section>
+
+<section class="section" id="source-pair">
+ <div class="wrap">
+  <span class="kicker">3.1 · Reading across multiple texts</span>
+  <h2>Read the prose and the table together.</h2>
+  <p class="section-intro">Two simulated sources examine peer rehearsal before a microteaching session. Identify what each source measures and how far its evidence can support a shared conclusion.</p>
+  <div data-source-pair></div>
+  <div class="study-grid study-checks" data-practice="reading"></div>
+  <section class="card study-block">
+   <h3>From two findings to one synthesis</h3>
+   <p>Write two or three sentences that connect the sources. State the distinct outcomes, use one result from each and qualify your conclusion.</p>
+   <label class="study-label" for="reading-synthesis">Your synthesis</label>
+   <textarea class="study-input" id="reading-synthesis" data-study-save="synthesis" rows="4" maxlength="3000"></textarea>
+   <details class="study-model"><summary>Compare with a model</summary><p>The survey indicates that nine of twelve volunteers reported greater confidence after rehearsing. The observation table shows a small descriptive difference in clear transitions between rehearsed and unrehearsed sessions. The sources give reasons to investigate rehearsal further, while their different measures and designs limit causal conclusions.</p></details>
+   <p class="study-note" data-storage-message role="status">Your synthesis stays in this browser. It carries into the Writing Studio when both pages share site storage. For local files, you can also copy and paste it.</p>
+   <a class="btn primary" href="writing.html#studio">Continue to the Writing Studio</a>
+  </section>
  </div>
 </section>
 
