@@ -1,6 +1,25 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/course",
+      "destination": "https://tslb1114.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "tslb1114-academic-reading-explorer.vercel.app" }],
+      "destination": "/reading",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "tslb1114-academic-reading-explorer-jude-projects67.vercel.app" }],
+      "destination": "/reading",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

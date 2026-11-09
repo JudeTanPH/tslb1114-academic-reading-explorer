@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en-MY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TSLB1114 Topic 4 Academic Writing Explorer. Practise style, APA 7 and the writing process.">
+  <title>TSLB1114 Academic Writing Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="study.css">
+  <script src="study.js" defer></script>
+  <script src="vendor/anime.umd.min.js" defer></script>
+  <script src="writing-motion.js" defer></script>
+</head>
+<body class="writing-page">
+  <a class="skip-link" href="#writing-main">Skip to Writing Explorer</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home"><span class="brandmark" aria-hidden="true">AW</span>TSLB1114 Writing Explorer</a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="https://tslb1114.vercel.app/">Course hub</a><a href="#writing-flow">Guided example</a><a href="#style">Academic style</a><a href="#apa">APA 7</a><a href="#process">Writing process</a><a href="#studio">Writing Studio</a><a href="#writing-sources">Sources</a><a href="reading.html">Reading Explorer</a>
+      </nav>
+    </div>
+  </header>
+  <main id="writing-main" tabindex="-1">
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">TSLB1114 · Topic 4</p>
+          <h1>Academic Writing<br><span>with accountable claims.</span></h1>
+          <p class="lead">Write so a reader can trace the evidence, follow your reasoning and see where the limits of your claim lie.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#writing-flow">Follow a worked example</a>
+            <a class="btn secondary" href="lecture-notes.html#topic-4">Lecture notes</a>
+            <a class="btn secondary" href="#writing-process-diagram">Writing process diagram</a>
+          </div>
+          <p class="note">PPISMP 2026–2027 · CLO3. Compose writing for a variety of academic purposes and contexts (C6, A4, PLO2, PLO11, KKG5, KEP10).</p>
+        </div>
+        <aside class="hero-card" aria-label="Your writing route">
+          <h3>Your writing route</h3>
+          <div class="map">
+            <div class="node"><span class="pill">01</span><b>Choose a register</b><small>tone, perspective and diction</small></div>
+            <div class="node"><span class="pill">02</span><b>Make sources traceable</b><small>APA 7 citations and references</small></div>
+            <div class="node"><span class="pill">03</span><b>Plan and draft</b><small>audience, paragraphs, paraphrase, evidence</small></div>
+            <div class="node"><span class="pill">04</span><b>Review and revise</b><small>claim, coherence and accuracy</small></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="writing-flow">
+      <div class="wrap">
+        <p class="kicker">Guided example · From task to paragraph</p>
+        <h2>Follow one writing decision at a time.</h2>
+        <p class="section-intro">Watch how a task becomes a claim, then see what changes when the evidence calls for a narrower conclusion. Choose any step to compare the decisions.</p>
+        <div class="flow-lab" data-lesson-flow>
+          <nav class="flow-choices" aria-label="Steps in the worked example">
+            <a href="#flow-task" data-flow-choice><span>01</span><strong>Read the task</strong></a>
+            <a href="#flow-plan" data-flow-choice><span>02</span><strong>Plan the evidence</strong></a>
+            <a href="#flow-draft" data-flow-choice><span>03</span><strong>Draft the paragraph</strong></a>
+            <a href="#flow-revise" data-flow-choice><span>04</span><strong>Revise the claim</strong></a>
+          </nav>
+          <div class="flow-track" aria-hidden="true" hidden><span data-flow-progress></span></div>
+          <div class="flow-actions" data-flow-actions hidden>
+            <button type="button" class="btn secondary" data-flow-previous>Previous</button>
+            <p class="flow-status" role="status" data-flow-status></p>
+            <button type="button" class="btn primary" data-flow-next>Next step</button>
+          </div>
+          <div class="flow-panels">
+            <article class="flow-panel" id="flow-task" data-flow-panel>
+              <p class="figure-tag">01 · Read the task</p>
+              <h3>What does “evaluate” require?</h3>
+              <p class="flow-sample">Evaluate whether peer rehearsal should be required before microteaching.</p>
+              <dl class="flow-key">
+                <div><dt>Command</dt><dd>Make a judgement and explain it.</dd></div>
+                <div><dt>Scope</dt><dd>Decide whether rehearsal should be required before microteaching.</dd></div>
+                <div><dt>Reader</dt><dd>A teacher educator weighing a course decision.</dd></div>
+              </dl>
+            </article>
+            <article class="flow-panel" id="flow-plan" data-flow-panel>
+              <p class="figure-tag">02 · Plan the evidence</p>
+              <h3>Separate the two outcomes.</h3>
+              <div class="study-grid flow-evidence">
+                <div>
+                  <strong>Source A · Confidence</strong>
+                  <label class="flow-meter"><span>Volunteers who reported greater confidence <strong>9/12</strong></span><meter min="0" max="12" value="9">9 of 12</meter></label>
+                  <small>Self-report. No earlier confidence measure.</small>
+                </div>
+                <div>
+                  <strong>Source B · Clear transitions</strong>
+                  <label class="flow-meter"><span>Rehearsed sessions <strong>6/12</strong></span><meter min="0" max="12" value="6">6 of 12</meter></label>
+                  <label class="flow-meter"><span>Unrehearsed sessions <strong>5/12</strong></span><meter min="0" max="12" value="5">5 of 12</meter></label>
+                  <small>Observation. The groups had no comparable baseline.</small>
+                </div>
+              </div>
+              <p>Use each result for the question it can answer. The first measure concerns how trainees felt. The second concerns what observers recorded.</p>
+            </article>
+            <article class="flow-panel" id="flow-draft" data-flow-panel>
+              <p class="figure-tag">03 · Draft the paragraph</p>
+              <h3>Put a claim next to its evidence.</h3>
+              <p class="flow-sample">Peer rehearsal should be compulsory because trainees who rehearsed were more confident and taught better.</p>
+              <p><strong>Look for the gap.</strong> The survey captures perceived confidence and the table counts one observed behaviour. The draft makes a much broader claim about teaching quality.</p>
+              <a href="#paragraph-diagram">See how point, evidence and explanation work together</a>
+            </article>
+            <article class="flow-panel" id="flow-revise" data-flow-panel>
+              <p class="figure-tag">04 · Revise the claim</p>
+              <h3>Make the recommendation fit the evidence.</h3>
+              <p class="flow-sample">Peer rehearsal could be offered as a preparation activity. Volunteers reported greater confidence, while the observed difference in transitions was small. More comparable evidence is needed before making rehearsal compulsory.</p>
+              <p><strong>What changed.</strong> The revision distinguishes the outcomes and gives the reader a proportionate recommendation.</p>
+              <a href="#studio">Try the same decisions in the Writing Studio</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="style">
+      <div class="wrap">
+        <p class="kicker">4.1 · Characteristics of academic writing</p>
+        <h2>Choose words that match the evidence.</h2>
+        <p class="section-intro">A teacher educator reading an essay about microteaching needs to know what happened, who was involved and how much confidence to place in the conclusion. Tone, perspective and diction help you make those decisions visible to the reader.</p>
+        <div class="lesson-stack study-block">
+          <article class="card lesson-unit" id="formal-tone">
+            <h3>4.1.1 Formal tone</h3>
+            <p>Use a measured register. Replace casual intensifiers, sweeping generalisations and vague approval with a specific claim. Set the strength of the claim by examining the evidence. A small survey can describe what its respondents reported. A stronger design is needed to establish what caused a change.</p>
+            <div class="lesson-example">
+              <p><strong>First attempt</strong> “Rehearsal was really helpful and everybody got better at teaching.”</p>
+              <p><strong>Academic version</strong> “Nine of the twelve volunteers reported greater confidence in giving directions after rehearsing.”</p>
+              <p><strong>What changed</strong> The sentence identifies who responded and what they reported. It leaves open whether their observed teaching improved. The example uses the simulated survey in the Writing Studio.</p>
+            </div>
+            <p>Qualify the part that is uncertain. In “The findings suggest that rehearsal may help some trainees feel prepared”, the uncertainty concerns the wider interpretation. A count directly stated in a source can usually be reported without hedging the count itself.</p>
+            <p>Hyland (2005) calls choices such as <em>may</em> and <em>suggests</em> part of a writer’s stance. Hedges leave room for uncertainty. Boosters such as <em>clearly</em> signal stronger commitment and need a defensible basis. Reader engagement concerns how a writer guides the reader, for example by directing attention to a meaningful difference in a table.</p>
+            <figure class="writing-figure" id="stance-diagram">
+              <figcaption><strong>How much does the claim ask the reader to believe?</strong></figcaption>
+              <ol class="figure-flow">
+                <li><span class="figure-tag">Describe</span><strong>“Volunteers reported greater confidence.”</strong><span>Records what participants said.</span></li>
+                <li><span class="figure-tag">Interpret</span><strong>“Rehearsal may help trainees feel prepared.”</strong><span>Offers a tentative reading of the result.</span></li>
+                <li class="figure-caution"><span class="figure-tag">Attribute a cause</span><strong>“Rehearsal improved teaching performance.”</strong><span>Needs stronger evidence and a measure of performance.</span></li>
+              </ol>
+              <p class="figure-note">As you move from describing a result to attributing a cause, the claim needs stronger evidence.</p>
+            </figure>
+          </article>
+          <article class="card lesson-unit" id="third-person">
+            <h3>4.1.2 Third-person perspective</h3>
+            <p>In a conventional evidence-based essay, put the concept, evidence or participants in the foreground. This helps readers see the basis for the claim. An active sentence such as “The observation table records a one-session difference” makes the source and action clear. A passive sentence can be useful when the procedure matters more than the person carrying it out, as in “Each session was rated using the same criterion”.</p>
+            <div class="lesson-example">
+              <p><strong>Academic essay</strong> “The observation table shows that six rehearsed sessions and five unrehearsed sessions met the transition criterion.”</p>
+              <p><strong>Practicum reflection</strong> “I shortened my instructions after noticing that pupils began the activity at different times.”</p>
+              <p><strong>Why the perspective changes</strong> The essay asks the reader to examine external evidence. The reflection asks the trainee to account for a professional decision. Use the perspective that suits the genre and assignment.</p>
+            </div>
+          </article>
+          <article class="card lesson-unit" id="diction">
+            <h3>4.1.3 Diction</h3>
+            <p>Choose words with the meaning your argument needs. “The group had good results” leaves the outcome and the basis for the judgement unclear. “The group completed more tasks within the allotted time” identifies the result that a reader can examine. Specify the comparison, the measure or the condition when it affects interpretation.</p>
+            <dl class="lesson-terms">
+              <dt><em>Reported</em></dt><dd>Use for what respondents or an author said. “Volunteers reported greater confidence.”</dd>
+              <dt><em>Observed</em></dt><dd>Use for a recorded behaviour. “Observers recorded a clear transition in six rehearsed sessions.”</dd>
+              <dt><em>Suggests</em></dt><dd>Use for a plausible interpretation within the limits of the evidence. “The comparison suggests a possible benefit worth investigating.”</dd>
+              <dt><em>Caused</em></dt><dd>Use when the evidence supports a causal link. Before writing “rehearsal caused the difference”, examine how the groups were formed and whether they were comparable.</dd>
+            </dl>
+            <details class="study-model"><summary>Try a sentence revision</summary><p>Revise “The teaching technique produced amazing results” using this detail: 8 of 10 pupils completed the activity within five minutes. A precise version is “Eight of the ten pupils completed the activity within five minutes.” A comparison with another technique would require comparable data.</p></details>
+          </article>
+        </div>
+        <details class="card lesson-practice study-block">
+          <summary>Practise tone, perspective and diction</summary>
+          <div class="study-grid study-checks" data-practice="style"></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="apa">
+      <div class="wrap">
+        <p class="kicker">4.1.4 · Academic conventions</p>
+        <h2>Citations and APA 7 referencing</h2>
+        <p class="section-intro">A citation tells the reader whose idea, data or wording you used. A reference gives the publication details needed to retrieve it. Together, they let a reader check the evidence behind your argument.</p>
+        <div class="lesson-stack">
+          <article class="card lesson-unit">
+            <h3>Decide what to cite and where</h3>
+            <p>Cite borrowed ideas, data, interpretations and wording even when you change the wording. Put the citation close to the borrowed material so the reader can see which ideas belong to which source. A paragraph that switches between sources may need more than one citation.</p>
+            <div class="lesson-example">
+              <p><strong>Narrative citation</strong> List and Alexander (2019) propose a framework for using multiple texts. Name the authors in the sentence when their position or role matters.</p>
+              <p><strong>Parenthetical citation</strong> Reading across documents involves several phases (List &amp; Alexander, 2019). Use parentheses when the idea is the focus of the sentence.</p>
+            </div>
+            <dl class="lesson-terms">
+              <dt>One author</dt><dd>Hyland (2005) in the sentence, or (Hyland, 2005) in parentheses.</dd>
+              <dt>Two authors</dt><dd>Use both surnames each time. Write “and” in the sentence and “&amp;” in parentheses.</dd>
+              <dt>Three or more authors</dt><dd>Usually use the first surname and “et al.” from the first citation, as in Bråten et al. (2009) or (Bråten et al., 2009). Use the full author information in the reference entry according to APA rules.</dd>
+            </dl>
+            <p>A paraphrase normally needs the author and year. A page number can help the reader locate a specific idea in a long work. For a direct quotation, add a page number or another locator such as a paragraph number. Enclose a quotation of fewer than 40 words in quotation marks. Use block formatting for quotations of 40 words or more.</p>
+            <p class="lesson-links"><a href="https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date">APA author–date guidance</a><a href="https://apastyle.apa.org/style-grammar-guidelines/citations/quotations">APA quotation guidance</a></p>
+          </article>
+          <article class="card lesson-unit">
+            <h3>Build the reference for the source type</h3>
+            <p>Start with the author, date, title and source. Locate these details on the publication itself or its publisher record. The format changes according to the type of work. Compare the title formatting and source details in the following entries.</p>
+            <div class="lesson-example">
+              <h4>Journal article</h4>
+              <figure class="writing-figure citation-figure" id="citation-diagram">
+                <figcaption><strong>Follow an APA citation to its reference</strong></figcaption>
+                <div class="citation-row">
+                  <span class="figure-tag">In the text</span>
+                  <p>(<span class="citation-authors">List &amp; Alexander</span>, <span class="citation-year">2019</span>)</p>
+                </div>
+                <span class="citation-arrow" aria-hidden="true">↓</span>
+                <div class="citation-row">
+                  <span class="figure-tag">In the reference list</span>
+                  <p class="reference-entry"><span class="citation-authors">List, A., &amp; Alexander, P. A.</span> (<span class="citation-year">2019</span>). Toward an integrated framework of multiple text use. <em>Educational Psychologist, 54</em>(1), 20–39. <a href="https://doi.org/10.1080/00461520.2018.1505514">https://doi.org/10.1080/00461520.2018.1505514</a></p>
+                </div>
+                <p class="figure-note">Match the surnames and year first. Then use the title and publication details to locate the work.</p>
+                <div class="citation-controls" data-citation-controls hidden>
+                  <button class="btn secondary" type="button" data-citation-trace="authors" aria-pressed="false">Trace the authors</button>
+                  <button class="btn secondary" type="button" data-citation-trace="year" aria-pressed="false">Trace the year</button>
+                  <p class="figure-note" data-citation-status role="status">Choose a detail to match it across both lines.</p>
+                </div>
+              </figure>
+              <p>Italicise the journal name and volume. Give the issue and page range or article number when available. Present the DOI as a link.</p>
+              <h4>Book</h4>
+              <p class="reference-entry">American Psychological Association. (2020). <em>Publication manual of the American Psychological Association</em> (7th ed.). https://doi.org/10.1037/0000165-000</p>
+              <p><a href="https://apastyle.apa.org/products/publication-manual-7th-edition">Open the APA publisher page</a></p>
+              <p>Italicise the book title and put the edition after it. Include the publisher when it differs from the author. Here the organisation is both author and publisher.</p>
+              <h4>Webpage</h4>
+              <p class="reference-entry">American Psychological Association. (2022, July). <em>Paraphrases</em>. APA Style. <a href="https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing">https://apastyle.apa.org/style-grammar-guidelines/citations/paraphrasing</a></p>
+              <p>Use the specific page title and link. Use the date shown for that content, or “n.d.” when the page has no publication or update date. Omit the site name when it is the same as the author.</p>
+            </div>
+            <p>Alphabetise the reference list by first author or organisation, preserve the author order within each entry and use a hanging indent. Cross-check in both directions. A cited article should be easy to find in the list, and a listed work should have a purpose in the text.</p>
+            <p class="lesson-links"><a href="https://apastyle.apa.org/style-grammar-guidelines/references/examples">APA reference examples</a><a href="https://apastyle.apa.org/style-grammar-guidelines/references/basic-principles">APA reference principles</a></p>
+          </article>
+        </div>
+        <details class="card lesson-practice study-block">
+          <summary>Practise citations and reference matching</summary>
+          <div class="study-grid study-checks" data-practice="apa"></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section alt" id="process">
+      <div class="wrap">
+        <p class="kicker">4.2 · Process of academic writing</p>
+        <h2>Plan, draft and revise.</h2>
+        <p class="section-intro">Planning, composing and reviewing recur as you write. A new source can change your thesis. An early draft can reveal a gap that sends you back to reading. This recursive view follows Flower and Hayes (1981) and Hayes (2012). The kind of text you are producing helps you decide what to plan and review (Badger &amp; White, 2000).</p>
+        <figure class="writing-figure" id="writing-process-diagram">
+          <figcaption><strong>Where to go when your draft needs work</strong></figcaption>
+          <ol class="figure-flow">
+            <li><span class="figure-tag">01 · Pre-writing</span><strong>Decide what to argue</strong><span>Read for a question, an audience and usable evidence.</span></li>
+            <li><span class="figure-tag">02 · While writing</span><strong>Develop the argument</strong><span>Draft paragraphs. Cite sources and explain what they support.</span></li>
+            <li><span class="figure-tag">03 · Post-writing</span><strong>Review the whole draft</strong><span>Revise the argument, edit the language and proofread.</span></li>
+          </ol>
+          <p class="figure-return"><span aria-hidden="true">↶</span><span><strong>Return to an earlier stage.</strong> If your evidence is too thin, go back to reading. If the paragraph lacks a clear point, return to the plan.</span></p>
+        </figure>
+        <nav class="lesson-links study-block" aria-label="Writing stages">
+          <a href="#pre-writing">4.2.1 Pre-writing</a><a href="#while-writing">4.2.2 While writing</a><a href="#post-writing">4.2.3 Post-writing</a>
+        </nav>
+        <div class="lesson-stack study-block">
+          <article class="card lesson-unit" id="pre-writing">
+            <h3>4.2.1 Pre-writing</h3>
+            <h4>Background reading</h4>
+            <p>Underline the command word, topic and scope before looking for sources. “Evaluate whether peer rehearsal should be required before microteaching” asks for a reasoned judgement about a requirement. A useful plan needs criteria, such as preparation and observed teaching performance, plus evidence that speaks to each criterion.</p>
+            <p>Give your question a purpose. In the example, the answer matters because a compulsory activity takes time away from other forms of preparation. That consequence helps explain why the quality of the evidence matters. Booth et al. (2016) show how writers can move from a topic to a question and explain why the answer is worth knowing.</p>
+            <ol>
+              <li>Turn the broad topic into a question. Ask what the reader needs to decide.</li>
+              <li>Read with that question in mind. Record each source’s main claim, useful evidence, method or context, and one limitation. Save its publication details and any relevant page number.</li>
+              <li>Group evidence by issue. Note which sources support, qualify or challenge your initial position.</li>
+              <li>Draft a provisional thesis. Adjust its scope when the available evidence is narrower than the question.</li>
+            </ol>
+            <div class="lesson-example">
+              <p><strong>Broad topic</strong> Peer rehearsal in teacher education.</p>
+              <p><strong>Focused question</strong> What do the practice sources support about requiring rehearsal before microteaching?</p>
+              <p><strong>Provisional thesis</strong> Teacher educators could offer peer rehearsal as a preparation option while collecting stronger evidence on classroom transitions before making it compulsory.</p>
+              <p><strong>Evidence plan</strong> Use Source A for perceived readiness and Source B for observed transitions. Explain why these are different measures.</p>
+            </div>
+            <h4>Considering the audience</h4>
+            <p>A teacher educator deciding on course design needs the evidence and its limits. A fellow trainee preparing for tomorrow’s session needs a concrete procedure and a short example. Both readers can use the same topic, while the content, language and level of explanation change with the purpose. Genre and academic literacies research explain why expectations also vary by task and discipline (Hyland, 2007; Johns, 2008; Lea &amp; Street, 1998; Martin &amp; Rose, 2008; Wingate, 2012).</p>
+            <p>Swales (1990, 2004) uses the Create a Research Space (CARS) model to describe how research introductions establish a topic, locate a question or gap, and explain the present contribution. Here is how those moves can be adapted for an essay evaluating rehearsal.</p>
+            <figure class="writing-figure" id="cars-diagram">
+              <figcaption><strong>Three moves in an introduction</strong></figcaption>
+              <ol class="figure-flow">
+                <li><span class="figure-tag">01 · Establish a territory</span><strong>Introduce the topic</strong><span>Peer rehearsal gives trainees a chance to practise instructions before microteaching.</span></li>
+                <li><span class="figure-tag">02 · Establish a niche</span><strong>Identify the question</strong><span>Should rehearsal be required if readiness and observed performance are different outcomes?</span></li>
+                <li><span class="figure-tag">03 · Occupy the niche</span><strong>State the essay’s position</strong><span>Evaluate both outcomes and argue for offering rehearsal while its effect on practice is investigated.</span></li>
+              </ol>
+              <p class="figure-note">For a reflective task, the introduction can instead identify a teaching experience and the learning question it raised.</p>
+            </figure>
+          </article>
+
+          <article class="card lesson-unit" id="while-writing">
+            <h3>4.2.2 While writing</h3>
+            <h4>Paragraphing</h4>
+            <p>Give each paragraph a controlling point that advances the thesis. Use the topic sentence to orient the reader, then develop the point through evidence, analysis, examples or comparison. Check that every sentence contributes to the paragraph’s purpose and that the next paragraph follows logically.</p>
+            <p>PEEL is a planning scaffold. Check for a <strong>point</strong>, relevant <strong>evidence</strong>, an <strong>explanation</strong> of what the evidence means and a <strong>link</strong> to the wider argument where helpful. Toulmin’s model gives the explanation a sharper focus. The <em>claim</em> is the judgement, the <em>grounds</em> are its support, and the <em>warrant</em> is the reasoning that makes the support relevant. Qualification and rebuttal help the writer account for the conditions and limitations of the argument (Toulmin, 1958/2003).</p>
+            <figure class="writing-figure" id="paragraph-diagram">
+              <figcaption><strong>Read the paragraph by function</strong></figcaption>
+              <ol class="figure-annotated">
+                <li><span><strong>Point</strong><small>Claim</small></span><p>Peer rehearsal may be worth offering as a preparation activity.</p></li>
+                <li><span><strong>Evidence</strong><small>Grounds</small></span><p>Nine of twelve volunteers reported greater confidence in giving directions after rehearsal.</p></li>
+                <li><span><strong>Explanation</strong><small>Warrant and limit</small></span><p>Perceived confidence matters when the aim is to help trainees feel ready to give directions. Whether they gave clearer directions in practice is a separate question.</p></li>
+                <li><span><strong>Link</strong><small>Next issue</small></span><p>A decision to require rehearsal therefore needs separate evidence about observed teaching.</p></li>
+              </ol>
+              <p class="figure-note">PEEL labels the paragraph’s jobs. Toulmin helps you examine how the evidence supports the point and where the claim needs a qualification.</p>
+            </figure>
+            <h4>Paraphrasing ideas</h4>
+            <p>Paraphrasing is a way of using a source for a purpose in your own argument. Read the passage, decide which idea your paragraph needs, set the original aside, write the idea in your own sentence structure, then check the meaning, scope and wording against the source. Add a citation even when you have reworded the idea. Research on second-language source use helps explain why this process needs practice (Hirvela &amp; Du, 2013; Keck, 2014; Pecorari, 2003; Wette, 2010).</p>
+            <figure class="writing-figure paraphrase-figure" id="paraphrase-comparison">
+              <figcaption><strong>Compare a close copy with an effective paraphrase</strong></figcaption>
+              <div class="paraphrase-lab" data-lesson-flow>
+                <p class="flow-sample"><strong>Simulated source</strong> “After an optional peer rehearsal, <mark>nine of twelve volunteers reported feeling more confident about giving classroom</mark> directions.”</p>
+                <nav class="flow-choices" aria-label="Paraphrase versions">
+                  <a href="#paraphrase-close" data-flow-choice><strong>Close copy</strong></a>
+                  <a href="#paraphrase-effective" data-flow-choice><strong>Effective paraphrase</strong></a>
+                </nav>
+                <div class="flow-panels">
+                  <div class="flow-panel" id="paraphrase-close" data-flow-panel>
+                    <p>“Following an optional peer practice, <mark>nine of twelve volunteers reported feeling more confident about giving classroom</mark> instructions.”</p>
+                    <p><strong>Why it stays too close.</strong> The highlight shows an uninterrupted stretch of borrowed wording. The sentence also follows the original structure.</p>
+                  </div>
+                  <div class="flow-panel" id="paraphrase-effective" data-flow-panel>
+                    <p>“In Source A, <mark>three quarters of the volunteers who rehearsed</mark> said they felt more confident about giving directions (9 of 12 respondents).”</p>
+                    <p><strong>Why it works.</strong> The paraphrase leads with the group and finding in a new structure. It keeps the sample, self-reported outcome and attribution.</p>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            <h4>Supporting details</h4>
+            <p>Choose a detail that does a specific job. A definition can clarify the criterion. A finding can support a claim. A comparison can show why two results lead to different conclusions. After each detail, explain what it supports and how the method limits the inference.</p>
+            <p>Graff and Birkenstein (2024) frame source-based writing as a conversation. Represent a source’s position fairly, then state how your argument agrees, qualifies, extends or challenges it. In the rehearsal example, the survey supports a statement about reported confidence. The observation table addresses behaviour. An evidence-based response can acknowledge the survey result while qualifying the case for making rehearsal compulsory.</p>
+            <details class="study-model">
+              <summary>Study a paragraph with two academic sources</summary>
+              <p>When trainees compare academic texts, they should record why each source deserves weight in their argument. Bråten et al. (2009) examined the relationship between judging source trustworthiness and constructing meaning across texts. List and Alexander (2019) place the use of multiple texts within a process that extends from preparation to the production of a response. In a class synthesis task, students could therefore record both the finding they intend to use and the reason they regard its source as appropriate. This makes the judgement available for review when they draft the paragraph.</p>
+              <p><strong>Read the paragraph in three parts.</strong> The first sentence makes a recommendation. The next two sentences give the contributions of two sources and attribute them separately. The last two sentences develop a classroom implication. That implication is the writer’s application of the readings.</p>
+            </details>
+            <h4>Citations and referencing while drafting</h4>
+            <p>Add the citation as soon as you use a source. Keep a running reference list with author, year, title, publication details and DOI or URL where applicable. If one paragraph uses several sources, place each citation where its contribution is clear. Before moving on, read the paragraph and mark which sentences present evidence and which explain your own reasoning.</p>
+            <p class="lesson-links"><a href="#apa">Review the APA 7 examples</a><a href="https://www.ncl.ac.uk/academic-skills-kit/writing/academic-writing/paragraphing/">Newcastle University guidance on paragraphs</a></p>
+          </article>
+
+          <article class="card lesson-unit" id="post-writing">
+            <h3>4.2.3 Post-writing</h3>
+            <h4>Editing and proofreading</h4>
+            <p>Begin with a revision of the argument. Write a short phrase beside each paragraph describing what it does. This reverse outline helps you identify repetition, missing evidence and ideas in the wrong order. After the reasoning is sound, edit the language and proofread for accuracy.</p>
+            <div class="lesson-example">
+              <p><strong>Initial draft</strong> “Rehearsal prove that trainees are better teachers. The study had six good sessions, so all trainees should rehearse.”</p>
+              <p><strong>Revise the judgement</strong> Narrow the argument to one observed behaviour and add the comparison group. Source B records a one-session difference in clear transitions. The groups had no comparable baseline, so the result gives limited support for a requirement.</p>
+              <p><strong>Edit for clarity</strong> “Six of twelve rehearsed sessions met the transition criterion, compared with five of twelve unrehearsed sessions.” This identifies the groups, outcome and denominator without the vague phrase “good sessions”.</p>
+              <p><strong>Proofread</strong> Check agreement, punctuation, spelling, number consistency and the placement of the attribution. Compare every in-text citation with the reference list and check the reference details against the source.</p>
+            </div>
+            <h4>Check the conclusion against the introduction</h4>
+            <p>Return to the question the introduction set up. State the judgement that follows from the body of the essay, bring the main evidence together and identify any limitation that affects the decision.</p>
+            <div class="lesson-example">
+              <p><strong>Worked conclusion</strong> “The simulated evidence supports offering peer rehearsal as a preparation option. The confidence survey describes how volunteers felt, while the observation table shows a small difference in one aspect of teaching. A more comparable observation design would be needed before recommending rehearsal as a programme requirement.”</p>
+            </div>
+            <p>Use feedback to decide what to change and why. If a peer says “add evidence”, identify the particular claim that lacks support and decide whether it needs a stronger source, more explanation or a narrower scope. Carless and Boud (2018) connect feedback literacy with making judgements and taking action on feedback.</p>
+            <p class="lesson-links"><a href="https://writing.ku.edu/writing-process">University of Kansas writing process</a><a href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/">UNC guidance on editing and proofreading</a></p>
+          </article>
+        </div>
+        <details class="card lesson-practice study-block">
+          <summary>Practise planning, drafting and revising</summary>
+          <div class="study-grid study-checks" data-practice="process"></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="studio">
+      <div class="wrap">
+        <p class="kicker">4.2 · Writing Studio</p>
+        <h2>Turn reading evidence into a paragraph.</h2>
+        <p class="section-intro">Write a 90–130 word practice paragraph for a teacher educator deciding how to use peer rehearsal in microteaching. Use both simulated sources. Attribute them as Source A and Source B for this exercise.</p>
+        <p>Start by examining the worked paragraph and identifying what each part does. Use the prompts to build a plan, then draft independently and decide what needs revision. This sequence adapts the genre Teaching and Learning Cycle, which moves from analysing a model through guided construction to independent writing (Callaghan &amp; Rothery, 1988; Martin et al., 1987; Rose &amp; Martin, 2012).</p>
+        <figure class="writing-figure" id="genre-diagram">
+          <figcaption><strong>Genre Teaching–Learning Cycle in the Writing Studio</strong></figcaption>
+          <ol class="figure-flow figure-flow-four">
+            <li><span class="figure-tag">01 · Build knowledge</span><strong>Read the sources</strong><span>Compare the two measures and note what they leave open.</span></li>
+            <li><span class="figure-tag">02 · Analyse a model</span><strong>Notice what each part does</strong><span>Find the claim, evidence, reasoning and implication.</span></li>
+            <li><span class="figure-tag">03 · Construct together</span><strong>Develop a plan with guidance</strong><span>Use the prompts. With a peer or lecturer, explain why each detail belongs.</span></li>
+            <li><span class="figure-tag">04 · Write independently</span><strong>Draft and revise</strong><span>Compose your own paragraph and use the checklist to assess it.</span></li>
+          </ol>
+        </figure>
+        <div data-source-pair></div>
+        <details class="card study-block" id="carried-synthesis" hidden><summary>Your synthesis from Topic 3</summary><p id="carried-text" class="student-response"></p></details>
+        <div class="study-grid study-block">
+          <section class="card">
+            <h3>1. Plan for your audience</h3>
+            <label class="study-label" for="study-plan">What can the two sources support? What does the teacher educator need to know?</label>
+            <textarea class="study-input" id="study-plan" data-study-save="plan" rows="4" maxlength="3000"></textarea>
+          </section>
+          <section class="card">
+            <h3>2. Record supporting details</h3>
+            <label class="study-label" for="study-evidence">Paraphrase a finding from each source and record one limitation.</label>
+            <textarea class="study-input" id="study-evidence" data-study-save="evidence" rows="4" maxlength="3000"></textarea>
+          </section>
+        </div>
+        <section class="card study-block">
+          <h3>3. Draft the paragraph</h3>
+          <label class="study-label" for="study-draft">State a qualified claim, include evidence from both sources and explain how it informs the decision.</label>
+          <textarea class="study-input" id="study-draft" data-study-save="draft" rows="7" maxlength="6000"></textarea>
+          <p id="draft-words" class="study-note">0 words · practice target 90–130</p>
+          <details class="study-model"><summary>Compare with an annotated model</summary>
+            <p><strong>Claim.</strong> Peer rehearsal may help trainees feel prepared, although evidence of clearer classroom transitions remains limited.</p>
+            <p><strong>Support.</strong> In Source A, nine of twelve volunteers reported greater confidence. Source B recorded clear transitions in six of twelve rehearsed sessions, compared with five of twelve unrehearsed sessions.</p>
+            <p><strong>Reasoning and implication.</strong> The first result concerns perceived confidence and the second concerns observed behaviour. These results give little basis for predicting an individual trainee’s performance. A teacher educator could offer rehearsal as a preparation option and collect more comparable observation data before making it a programme requirement.</p>
+          </details>
+        </section>
+        <section class="card study-block">
+          <h3>4. Revise and proofread</h3>
+          <div class="study-checklist">
+            <label><input type="checkbox" data-study-save="check-claim"> My claim stays within the evidence.</label>
+            <label><input type="checkbox" data-study-save="check-detail"> I attributed details and preserved the different measures.</label>
+            <label><input type="checkbox" data-study-save="check-reasoning"> I explained why the evidence matters for the intended reader.</label>
+            <label><input type="checkbox" data-study-save="check-proof"> I checked wording, grammar, punctuation and attribution.</label>
+          </div>
+          <label class="study-label" for="study-reflection">Record one revision and the evidence that prompted it.</label>
+          <textarea class="study-input" id="study-reflection" data-study-save="reflection" rows="4" maxlength="3000"></textarea>
+          <p class="study-note" data-storage-message role="status">Your work is saved in this browser. Download a copy if you want to keep it elsewhere.</p>
+          <div class="hero-actions">
+            <button class="btn primary" type="button" id="download-study">Download practice draft</button>
+            <button class="btn secondary" type="button" id="clear-study">Clear Writing Studio</button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="section alt" id="writing-sources">
+      <div class="wrap">
+        <p class="kicker">Reading list</p>
+        <h2>Academic sources and further reading</h2>
+        <p class="section-intro">Use these sources to explore why academic texts are organised the way they are, how writers integrate evidence, and what revision can change.</p>
+        <details class="card source-group study-block">
+          <summary>Writing process, genre and audience</summary>
+          <p>Start with the process models to see why writers return to planning. The genre and academic literacies works explain how different audiences and tasks call for different choices. The teaching studies and books show how to learn from a model and build a response independently.</p>
+          <p class="reference-entry">Badger, R., &amp; White, G. (2000). A process genre approach to teaching writing. <em>ELT Journal, 54</em>(2), 153–160. <a href="https://doi.org/10.1093/elt/54.2.153">Article</a></p>
+          <p class="reference-entry">Callaghan, M., &amp; Rothery, J. (1988). <em>Teaching factual writing: A genre based approach</em>. DSP Literacy Project, Metropolitan East Region. <a href="https://books.google.com/books/about/Teaching_Factual_Writing.html?id=jqo9zwEACAAJ">Book record</a></p>
+          <p class="reference-entry">Flower, L., &amp; Hayes, J. R. (1981). A cognitive process theory of writing. <em>College Composition and Communication, 32</em>(4), 365–387. <a href="https://doi.org/10.58680/ccc198115885">Article</a></p>
+          <p class="reference-entry">Hayes, J. R. (2012). Modeling and remodeling writing. <em>Written Communication, 29</em>(3), 369–388. <a href="https://doi.org/10.1177/0741088312451260">Article</a></p>
+          <p class="reference-entry">Hyland, K. (2007). Genre pedagogy: Language, literacy and L2 writing instruction. <em>Journal of Second Language Writing, 16</em>(3), 148–164. <a href="https://doi.org/10.1016/j.jslw.2007.07.005">Article</a></p>
+          <p class="reference-entry">Johns, A. M. (2008). Genre awareness for the novice academic student: An ongoing quest. <em>Language Teaching, 41</em>(2), 237–252. <a href="https://doi.org/10.1017/S0261444807004892">Article</a></p>
+          <p class="reference-entry">Lea, M. R., &amp; Street, B. V. (1998). Student writing in higher education: An academic literacies approach. <em>Studies in Higher Education, 23</em>(2), 157–172. <a href="https://doi.org/10.1080/03075079812331380364">Article</a></p>
+          <p class="reference-entry">Martin, J. R., Christie, F., &amp; Rothery, J. (1987). Social processes in education: A reply to Sawyer and Watson (and others). In I. Reid (Ed.), <em>The place of genre in learning: Current debates</em> (pp. 46–57). Deakin University Press.</p>
+          <p class="reference-entry">Martin, J. R., &amp; Rose, D. (2008). <em>Genre relations: Mapping culture</em>. Equinox. <a href="https://library.strathmore.edu/Record/304114">Library catalogue</a></p>
+          <p class="reference-entry">Rose, D., &amp; Martin, J. R. (2012). <em>Learning to write, reading to learn: Genre, knowledge and pedagogy in the Sydney School</em>. Equinox. <a href="https://mau-opac.biblioteket.nu/bib/3452821">Library catalogue</a></p>
+          <p class="reference-entry">Wingate, U. (2012). Using academic literacies and genre-based models for academic writing instruction: A ‘literacy’ journey. <em>Journal of English for Academic Purposes, 11</em>(1), 26–37. <a href="https://doi.org/10.1016/j.jeap.2011.11.006">Article</a></p>
+        </details>
+        <details class="card source-group study-block">
+          <summary>Research questions, introductions and argument</summary>
+          <p>Use Booth and colleagues for question development, Swales for research introduction moves, and Toulmin for the reasoning that links evidence to a claim. Jaakkola provides an advanced example of how the purpose of a conceptual article shapes its design.</p>
+          <p class="reference-entry">Booth, W. C., Colomb, G. G., Williams, J. M., Bizup, J., &amp; FitzGerald, W. T. (2016). <em>The craft of research</em> (4th ed.). University of Chicago Press.</p>
+          <p class="reference-entry">Jaakkola, E. (2020). Designing conceptual articles: Four approaches. <em>AMS Review, 10</em>, 18–26. <a href="https://doi.org/10.1007/s13162-020-00161-0">Article</a></p>
+          <p class="reference-entry">Swales, J. M. (1990). <em>Genre analysis: English in academic and research settings</em>. Cambridge University Press. <a href="https://shop.cambridge.org/english/product/2700033225">Book</a></p>
+          <p class="reference-entry">Swales, J. M. (2004). <em>Research genres: Explorations and applications</em>. Cambridge University Press. <a href="https://www.cambridge.org/core/books/research-genres/957CEE46BB758DA7EC55BBDC31010748">Book</a></p>
+          <p class="reference-entry">Toulmin, S. E. (2003). <em>The uses of argument</em> (Updated ed.). Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511840005">Book</a> (Original work published 1958)</p>
+        </details>
+        <details class="card source-group study-block">
+          <summary>Source use, stance and revision</summary>
+          <p>Use these works to examine how writers read several sources, respond to them, paraphrase accurately, qualify a claim and decide how to act on feedback.</p>
+          <p class="reference-entry">Bråten, I., Strømsø, H. I., &amp; Britt, M. A. (2009). Trust matters: Examining the role of source evaluation in students’ construction of meaning within and across multiple texts. <em>Reading Research Quarterly, 44</em>(1), 6–28. <a href="https://doi.org/10.1598/RRQ.44.1.1">Article</a></p>
+          <p class="reference-entry">Carless, D., &amp; Boud, D. (2018). The development of student feedback literacy: Enabling uptake of feedback. <em>Assessment &amp; Evaluation in Higher Education, 43</em>(8), 1315–1325. <a href="https://doi.org/10.1080/02602938.2018.1463354">Article</a></p>
+          <p class="reference-entry">Graff, G., &amp; Birkenstein, C. (2024). <em>They say / I say: The moves that matter in academic writing</em> (6th ed.). W. W. Norton. <a href="https://wwnorton.co.uk/books/9781324070030-they-say-i-say-7d3c273c-df7d-44c2-a359-7cb538400899">Book</a></p>
+          <p class="reference-entry">Hirvela, A., &amp; Du, Q. (2013). “Why am I paraphrasing?”: Undergraduate ESL writers’ engagement with source-based academic writing and reading. <em>Journal of English for Academic Purposes, 12</em>(2), 87–98. <a href="https://doi.org/10.1016/j.jeap.2012.11.005">Article</a></p>
+          <p class="reference-entry">Hyland, K. (2005). Stance and engagement: A model of interaction in academic discourse. <em>Discourse Studies, 7</em>(2), 173–192. <a href="https://doi.org/10.1177/1461445605050365">Article</a></p>
+          <p class="reference-entry">Keck, C. (2014). Copying, paraphrasing, and academic writing development: A re-examination of L1 and L2 summarization practices. <em>Journal of Second Language Writing, 25</em>, 4–22. <a href="https://doi.org/10.1016/j.jslw.2014.05.005">Article</a></p>
+          <p class="reference-entry">List, A., &amp; Alexander, P. A. (2019). Toward an integrated framework of multiple text use. <em>Educational Psychologist, 54</em>(1), 20–39. <a href="https://doi.org/10.1080/00461520.2018.1505514">Article</a></p>
+          <p class="reference-entry">Pecorari, D. (2003). Good and original: Plagiarism and patchwriting in academic second-language writing. <em>Journal of Second Language Writing, 12</em>(4), 317–345. <a href="https://doi.org/10.1016/j.jslw.2003.08.004">Article</a></p>
+          <p class="reference-entry">Wette, R. (2010). Evaluating student learning in a university-level EAP unit on writing using sources. <em>Journal of Second Language Writing, 19</em>(3), 158–177. <a href="https://doi.org/10.1016/j.jslw.2010.06.002">Article</a></p>
+        </details>
+        <details class="card source-group study-block">
+          <summary>Practical writing guides</summary>
+          <p>Use university writing guidance to compare models and check a specific drafting decision. PEEL is a teaching scaffold used in writing guides, with different names for some of its parts.</p>
+          <p class="lesson-links">
+            <a href="https://www.ncl.ac.uk/academic-skills-kit/writing/academic-writing/">Newcastle University · Academic writing</a>
+            <a href="https://www.ncl.ac.uk/academic-skills-kit/writing/academic-writing/paragraphing/">Newcastle University · Paragraphing</a>
+            <a href="https://www.brookes.ac.uk/students/academic-development/online-resources/paragraphs">Oxford Brookes University · Paragraphs</a>
+            <a href="https://www.brookes.ac.uk/students/academic-development/online-resources/writing-with-sources">Oxford Brookes University · Writing with sources</a>
+            <a href="https://www.umass.edu/writing-center/resources/creating-research-space">UMass Amherst · Creating a research space</a>
+            <a href="https://www.umb.edu/writingcenter/services-for-students/graduate-writing-resources/">UMass Boston · Scholarly conversation</a>
+            <a href="https://writingcenter.utah.edu/writing-resources/constructing-academic-argument.php">University of Utah · Constructing an academic argument</a>
+            <a href="https://apastyle.apa.org/style-grammar-guidelines">APA Style · Guidelines</a>
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="study-footer">
+    <div class="wrap study-footer-inner">
+      <p>TSLB1114 · English Language Skills in Academic Context</p>
+      <nav aria-label="Related learning pages"><a href="reading.html">Reading Explorer</a><a href="lecture-notes.html">Lecture notes</a><a href="https://apastyle.apa.org/style-grammar-guidelines">APA Style</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
