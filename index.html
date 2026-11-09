@@ -1,531 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-MY">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TSLB1114 Academic Reading Explorer</title>
-<meta name="description" content="Interactive student learning website for TSLB1114 Topic 3: Academic Reading." />
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="study.css">
-<script src="study.js" defer></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TSLB1114 course hub with the Listening Lab, Speaking resources, Academic Reading Explorer and Academic Writing Explorer.">
+  <title>TSLB1114 · English Language Skills in Academic Context</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="study.css">
 </head>
-<body class="reading-page">
-<a class="skip-link" href="#reading-main">Skip to Reading Explorer</a>
-<header class="topbar">
-  <div class="wrap nav">
-    <a class="brand" href="#home"><span class="brandmark">AR</span>TSLB1114 Reading Explorer</a>
-    <nav class="navlinks" aria-label="Main navigation">
-      <a href="course.html">Course hub</a><a href="#map">Topic map</a><a href="#source-pair">Paired texts</a><a href="#texts">Text types</a><a href="#critical">Critical reading</a>
-      <a href="#credibility">Source credibility</a><a href="#synthesis">Synthesis</a><a href="#article-lab">Article lab</a><a href="#challenge">Challenge</a>
-    </nav>
-    <button class="reset" id="resetProgress">Reset progress</button>
-  </div>
-  <div class="progressbar"><span id="scrollProgress"></span></div>
-</header>
-
-<main id="reading-main" tabindex="-1">
-<section class="hero" id="home">
- <div class="wrap hero-grid">
-  <div>
-   <span class="eyebrow">TSLB1114 · Topic 3</span>
-   <h1>Academic Reading<br><span>as evidence work.</span></h1>
-   <p class="lead">Move beyond “finding information”. Analyse what a text is doing, how a claim is supported, how sources relate, and how much confidence the evidence deserves.</p>
-   <div class="hero-actions">
-    <a class="btn primary" href="#map">Start exploring</a>
-    <a class="btn secondary" href="lecture-notes.html#topic-3">Lecture notes</a>
-    <a class="btn secondary" href="writing.html">Topic 4 · Academic Writing</a>
-   </div>
-   <p class="note">PPISMP 2026–2027 · CLO2: Analyse critically a variety of academic texts (C4, PLO2, KKG2).</p>
-  </div>
-  <aside class="hero-card">
-   <h3>Your reading route</h3>
-   <div class="map">
-    <div class="node"><span class="pill">01</span><b>Read the structure</b><small>linear, non-linear, mixed</small></div>
-    <div class="node"><span class="pill">02</span><b>Read the claim</b><small>purpose, stance, evidence</small></div>
-    <div class="node"><span class="pill">03</span><b>Read the source</b><small>credibility, peer review, indexing</small></div>
-    <div class="node"><span class="pill">04</span><b>Read across texts</b><small>agreement, conflict, scope</small></div>
-    <div class="node"><span class="pill">05</span><b>Build synthesis</b><small>integrate, attribute, qualify</small></div>
-    <div class="node"><span class="pill">06</span><b>Read to write</b><small>moves, evidence, reasoning</small></div>
-   </div>
-  </aside>
- </div>
-</section>
-
-<section class="section alt" id="map">
- <div class="wrap">
-  <span class="kicker">1. Topic map</span>
-  <h2>Academic reading is a coordinated task.</h2>
-  <p class="section-intro">A strong reader changes strategy according to the purpose. Some texts require close argument analysis, some require rapid retrieval of a value, and some require comparison across several documents.</p>
-  <div class="grid three" style="margin-top:26px">
-   <div class="card"><div class="icon">↔</div><h3>3.1 Across multiple texts</h3><p>Track what each source says and how the sources relate. Preserve source identity while comparing content.</p></div>
-   <div class="card"><div class="icon">⌘</div><h3>3.2 Text types</h3><p>Recognise cause-effect, compare-contrast, problem-solution, expository and argumentative organisation.</p></div>
-   <div class="card"><div class="icon">◎</div><h3>3.3 Reading & viewing skills</h3><p>Analyse claims, bias, source quality, arguments, tone, links, summary and synthesis.</p></div>
-  </div>
-  <div class="keyidea"><strong>Key idea.</strong> Critical reading is not automatic disagreement. It is disciplined interpretation in which claims, evidence, language, source and relationships are examined before a conclusion is accepted.</div>
-  <div class="flow" aria-label="Reading workflow">
-   <span class="step">Purpose</span><span class="arrow">→</span><span class="step">Structure</span><span class="arrow">→</span>
-   <span class="step">Claim</span><span class="arrow">→</span><span class="step">Evidence</span><span class="arrow">→</span>
-   <span class="step">Source</span><span class="arrow">→</span><span class="step">Relationship</span><span class="arrow">→</span><span class="step">Conclusion</span>
-  </div>
-  <div class="example-strip">
-   <div class="example-head"><span class="example-badge">Reference example</span><strong>What does “reading across texts” look like in research?</strong></div>
-   <div class="example-grid">
-    <article class="example-card">
-     <h3>Trust Matters</h3>
-     <p>Bråten, Strømsø and Britt (2009) asked students to read <b>seven texts about global warming</b> that differed in source characteristics. Students' source evaluations were related to how well they constructed meaning across the documents.</p>
-     <p class="example-task"><b>Try it:</b> Imagine two texts make the same claim, but one is an identified scientific report and the other is an anonymous web post. Should both claims receive equal weight? Explain what you would verify before deciding.</p>
-     <a class="ref-link" target="_blank" rel="noopener" href="https://doi.org/10.1598/RRQ.44.1.1">Open Bråten et al. (2009) ↗</a>
-    </article>
-    <article class="example-card">
-     <h3>Multiple-text use as a process</h3>
-     <p>List and Alexander (2019) describe multiple-text use as a process involving <b>preparation, execution and production</b>. This is useful when you move from deciding what a task requires, to reading and connecting sources, to producing a response.</p>
-     <p class="example-task"><b>Try it:</b> Before reading three articles, write one synthesis question. While reading, record agreements and conflicts. After reading, build one conclusion that explicitly reflects those relationships.</p>
-     <a class="ref-link" target="_blank" rel="noopener" href="https://doi.org/10.1080/00461520.2018.1505514">Open List & Alexander (2019) ↗</a>
-    </article>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="section" id="source-pair">
- <div class="wrap">
-  <span class="kicker">3.1 · Reading across multiple texts</span>
-  <h2>Read the prose and the table together.</h2>
-  <p class="section-intro">Two simulated sources examine peer rehearsal before a microteaching session. Identify what each source measures and how far its evidence can support a shared conclusion.</p>
-  <div data-source-pair></div>
-  <div class="study-grid study-checks" data-practice="reading"></div>
-  <section class="card study-block">
-   <h3>From two findings to one synthesis</h3>
-   <p>Write two or three sentences that connect the sources. State the distinct outcomes, use one result from each and qualify your conclusion.</p>
-   <label class="study-label" for="reading-synthesis">Your synthesis</label>
-   <textarea class="study-input" id="reading-synthesis" data-study-save="synthesis" rows="4" maxlength="3000"></textarea>
-   <details class="study-model"><summary>Compare with a model</summary><p>The survey indicates that nine of twelve volunteers reported greater confidence after rehearsing. The observation table shows a small descriptive difference in clear transitions between rehearsed and unrehearsed sessions. The sources give reasons to investigate rehearsal further, while their different measures and designs limit causal conclusions.</p></details>
-   <p class="study-note" data-storage-message role="status">Your synthesis stays in this browser. It carries into the Writing Studio when both pages share site storage. For local files, you can also copy and paste it.</p>
-   <a class="btn primary" href="writing.html#studio">Continue to the Writing Studio</a>
-  </section>
- </div>
-</section>
-
-<section class="section" id="texts">
- <div class="wrap">
-  <span class="kicker">2. Text-type explorer</span>
-  <h2>Identify what the text is doing.</h2>
-  <p class="section-intro">Text types are useful reading guides, not rigid boxes. One academic article may shift between several structures.</p>
-  <div class="type-tabs" role="tablist">
-   <button class="active" data-type="cause">Cause & effect</button>
-   <button data-type="compare">Compare & contrast</button>
-   <button data-type="problem">Problem–solution</button>
-   <button data-type="expository">Expository</button>
-   <button data-type="argument">Argumentative</button>
-  </div>
-  <div class="type-panel">
-   <div id="typeText"></div>
-   <div class="structure-visual" id="typeVisual" aria-label="Visual structure diagram"></div>
-  </div>
- </div>
-</section>
-
-<section class="section alt" id="critical">
- <div class="wrap">
-  <span class="kicker">3. Critical reading lab</span>
-  <h2>Separate claim type from claim truth.</h2>
-  <p class="section-intro">A factual claim is not automatically true. “Factual” means it can, in principle, be checked against evidence. Verification is a second task.</p>
-
-  <div class="grid two" style="margin-top:24px">
-   <div class="game">
-    <h3>Fact, interpretation, or evaluation?</h3>
-    <div class="prompt" id="claimPrompt"></div>
-    <div class="options" id="claimOptions"></div>
-    <div class="feedback" id="claimFeedback"></div>
-    <button class="btn secondary" id="nextClaim" style="margin-top:14px">Next example</button>
-   </div>
-   <div class="card">
-    <h3>Argument anatomy</h3>
-    <p>Click a component to see its role.</p>
-    <svg viewBox="0 0 700 310" role="img" aria-label="Argument anatomy diagram" style="width:100%;height:auto">
-      <defs><filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".14"/></filter></defs>
-      <g class="argpart" data-info="Claim: the proposition the writer wants the reader to accept." tabindex="0">
-       <rect x="25" y="100" rx="18" width="130" height="76" fill="#0b1f33" filter="url(#s)"/><text x="90" y="145" fill="white" text-anchor="middle" font-weight="800">CLAIM</text>
-      </g>
-      <path d="M160 138 H250" stroke="#8ba1aa" stroke-width="4" marker-end="url(#arr)"/>
-      <g class="argpart" data-info="Evidence: data, examples, findings or observations offered in support." tabindex="0">
-       <rect x="255" y="40" rx="18" width="145" height="70" fill="#147d7e"/><text x="327" y="82" fill="white" text-anchor="middle" font-weight="800">EVIDENCE</text>
-      </g>
-      <g class="argpart" data-info="Reasoning: the warrant or logic explaining why the evidence supports the claim." tabindex="0">
-       <rect x="255" y="170" rx="18" width="145" height="70" fill="#f2b84b"/><text x="327" y="212" fill="#0b1f33" text-anchor="middle" font-weight="800">REASONING</text>
-      </g>
-      <path d="M405 75 H515" stroke="#8ba1aa" stroke-width="4"/><path d="M405 205 H515" stroke="#8ba1aa" stroke-width="4"/>
-      <g class="argpart" data-info="Qualification: conditions, limits, uncertainty or exceptions that narrow the claim." tabindex="0">
-       <rect x="520" y="78" rx="18" width="150" height="70" fill="#dcefee"/><text x="595" y="120" fill="#0b1f33" text-anchor="middle" font-weight="800">QUALIFY</text>
-      </g>
-      <g class="argpart" data-info="Implication: what follows if the argument is accepted within its stated scope." tabindex="0">
-       <rect x="520" y="165" rx="18" width="150" height="70" fill="#f8e5e6"/><text x="595" y="207" fill="#0b1f33" text-anchor="middle" font-weight="800">IMPLICATION</text>
-      </g>
-      <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#8ba1aa"/></marker></defs>
-    </svg>
-    <div class="explain" id="argExplain">Select a component.</div>
-   </div>
-  </div>
-
-  <div class="reference-lab">
-   <div>
-    <span class="example-badge">Worked example</span>
-    <h3>Read an argument as a structure, not just a conclusion</h3>
-    <p><b>Fictional claim:</b> “Criterion-guided peer review improves revision quality.” A critical reader should separate the claim from the evidence and the reasoning that connects them.</p>
-    <div class="argument-example">
-     <div><b>Claim</b><span>Criterion-guided peer review improves revision quality.</span></div>
-     <div><b>Evidence</b><span>One class shows more substantive revisions after using explicit criteria.</span></div>
-     <div><b>Reasoning</b><span>Criteria may focus comments on changes students can act on.</span></div>
-     <div><b>Qualification</b><span>The evidence comes from one context and does not establish universal causation.</span></div>
+<body class="course-page">
+  <a class="skip-link" href="#course-main">Skip to course topics</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="./"><span class="brandmark" aria-hidden="true">EL</span>TSLB1114 Course Hub</a>
+      <nav class="navlinks" aria-label="Course navigation">
+        <a href="#topics">Course topics</a><a href="reading.html">Reading</a><a href="writing.html">Writing</a><a href="lecture-notes.html">Lecture notes</a>
+      </nav>
     </div>
-   </div>
-   <div class="reference-notes">
-    <a class="reference-note" target="_blank" rel="noopener" href="https://doi.org/10.1017/CBO9780511840005"><b>Toulmin (2003)</b><span>Use argument structure to ask what supports a claim and what warrants the move from evidence to conclusion.</span><em>Open book record ↗</em></a>
-    <a class="reference-note" target="_blank" rel="noopener" href="https://doi.org/10.1177/1461445605050365"><b>Hyland (2005)</b><span>Academic texts also position writers and readers through stance and engagement. Look at how certainty, caution and reader positioning shape the argument.</span><em>Open article ↗</em></a>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="section" id="credibility">
- <div class="wrap">
-  <span class="kicker">4. Source Credibility Lab</span>
-  <h2>Evaluate the article and the system around it.</h2>
-  <p class="section-intro">Indexing and quartiles can provide useful context, but they never replace close reading of methods, evidence, reasoning and limitations.</p>
-
-  <div class="levels">
-   <div class="level"><strong>1. Article</strong><span>Question, method, sample/data, analysis, claim-evidence fit, limitations.</span></div>
-   <div class="level"><strong>2. Author</strong><span>Expertise and affiliation provide context, but authority never replaces evidence.</span></div>
-   <div class="level"><strong>3. Journal</strong><span>Peer-review policy, editorial transparency, publisher, indexing, metrics.</span></div>
-   <div class="level"><strong>4. Ecosystem</strong><span>Databases, archiving, ethics, transparent fees and discoverability.</span></div>
-  </div>
-  <div class="evidence-rail">
-   <div class="rail-title"><span class="example-badge">Evidence behind this lab</span><strong>Why we use patterns, verification and transparency rather than shortcuts</strong></div>
-   <div class="rail-grid">
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1186/s12916-017-0785-9"><b>Shamseer et al. (2017)</b><span>Compared characteristics of potential predatory and legitimate biomedical journals. Use it to inspect patterns of journal characteristics rather than a single label.</span><em>Open article ↗</em></a>
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1136/bmjopen-2019-035561"><b>Cukier et al. (2020)</b><span>A modified Delphi consensus process examined how predatory journals and publishers should be defined and addressed, highlighting deception and low transparency.</span><em>Open article ↗</em></a>
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1038/d41586-019-03759-y"><b>Grudniewicz et al. (2019)</b><span>Presents the international consensus definition that underpins the caution against treating one feature, such as open access or an APC, as a verdict.</span><em>Open Nature article ↗</em></a>
-   </div>
-  </div>
-
-  <div class="grid two" style="margin-top:22px">
-   <div class="card">
-    <h3>Peer review: quality control, not a truth certificate</h3>
-    <p>Peer review is an important scholarly quality-control process. A credible journal should explain its review policy clearly. Even after peer review, the reader still needs to inspect the article itself.</p>
-    <div class="checklist">
-     <div class="check"><div class="dot">1</div><div><b>Process</b><br>Is peer review described transparently?</div></div>
-     <div class="check"><div class="dot">2</div><div><b>Evidence</b><br>Does the article show defensible methods and data?</div></div>
-     <div class="check"><div class="dot">3</div><div><b>Scope</b><br>Are limitations and uncertainty preserved?</div></div>
+  </header>
+  <main id="course-main" tabindex="-1">
+    <section class="hero">
+      <div class="wrap course-hero">
+        <p class="eyebrow">PPISMP · English language skills</p>
+        <h1>English Language Skills<br><span>in Academic Context</span></h1>
+        <p class="lead">Listen and speak for academic purposes, then read sources critically and use them to make a well-supported written argument.</p>
+      </div>
+    </section>
+    <section class="section alt" id="topics">
+      <div class="wrap">
+        <p class="kicker">Maklumat Kursus · Effective July 2026</p>
+        <h2>Choose a topic</h2>
+        <div class="study-grid course-grid">
+          <article class="card course-topic">
+            <p class="kicker">Topic 1</p>
+            <h3>Listening in Academic Context</h3>
+            <p>Practise listening for gist and detail, note-taking and following multiple speakers.</p>
+            <a class="btn secondary" href="https://tslb1114-listening-lab.vercel.app">Open Listening Lab <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="card course-topic">
+            <p class="kicker">Topic 2</p>
+            <h3>Speaking in Academic Context</h3>
+            <p>Prepare and deliver an academic presentation using a clear outline, relevant visual aids and effective audience engagement. The notes open in Google Drive, where sign-in may be required.</p>
+            <a class="btn secondary" href="https://drive.google.com/file/d/12K1Z72DgnXBwIum9lT7skKA8-Cga0Qq3/view">Open Speaking lecture notes <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="card course-topic">
+            <p class="kicker">Topic 3</p>
+            <h3>Academic Reading</h3>
+            <p>Work with linear and non-linear texts, evaluate arguments and synthesise evidence across sources.</p>
+            <div class="hero-actions"><a class="btn primary" href="reading.html">Open Reading Explorer</a><a href="lecture-notes.html#topic-3">Lecture notes</a></div>
+          </article>
+          <article class="card course-topic">
+            <p class="kicker">Topic 4</p>
+            <h3>Academic Writing</h3>
+            <p>Practise formal tone, source attribution and APA 7, then plan, draft and revise a paragraph using two sources.</p>
+            <div class="hero-actions"><a class="btn primary" href="writing.html">Open Writing Explorer</a><a href="lecture-notes.html#topic-4">Lecture notes</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="study-footer">
+    <div class="wrap study-footer-inner">
+      <p>TSLB1114 · Institute of Teacher Education, Rajang Campus</p>
+      <nav aria-label="Course reference"><a href="https://drive.google.com/file/d/14QrQV9H7XCIRfrkI4fVO6lDvFL89QRqz/view">Maklumat Kursus</a></nav>
     </div>
-   </div>
-   <div class="card">
-    <h3>Verify “Scopus indexed” directly</h3>
-    <p>Never treat a badge on a journal website as sufficient evidence. Search the exact journal title or ISSN in the official Scopus Sources interface, then check the matching source record and coverage information.</p>
-    <div class="keyidea"><strong>Do not infer current status from memory.</strong> Indexing can change over time. Verify the current record when the decision matters.</div>
-   </div>
-  </div>
-
-  <div class="card" style="margin-top:22px">
-   <h3>Quartile Explorer</h3>
-   <p>Click a band. The important question is not only “Which quartile?”, but “Which metric, category and year?”</p>
-   <div class="qbands">
-    <button class="qband" data-q="Q1">Q1<br><small>highest quarter</small></button>
-    <button class="qband" data-q="Q2">Q2<br><small>second quarter</small></button>
-    <button class="qband" data-q="Q3">Q3<br><small>third quarter</small></button>
-    <button class="qband" data-q="Q4">Q4<br><small>fourth quarter</small></button>
-   </div>
-   <div class="explain" id="qExplain">Select Q1, Q2, Q3 or Q4.</div>
-   <div class="myths">
-    <div class="myth"><button>“Q1 means every article in the journal is high quality.” <span>+</span></button><div class="answer"><b>Myth.</b> Quartile is a journal-level contextual indicator. You still need to evaluate the individual article.</div></div>
-    <div class="myth"><button>“Q4 means the journal is predatory.” <span>+</span></button><div class="answer"><b>Myth.</b> Quartile position and deceptive publishing are different questions. A lower quartile does not establish predatory conduct.</div></div>
-    <div class="myth"><button>“SCImago quartile and CiteScore quartile are identical.” <span>+</span></button><div class="answer"><b>Myth.</b> SJR and CiteScore are distinct journal-metric systems. Always name the system, category and year.</div></div>
-   </div>
-  </div>
-
-  <div class="real-journal-lab">
-   <div class="real-journal-head">
-    <div>
-     <span class="example-badge">Real-world comparison</span>
-     <h3>Q1, Q2, Q3, Q4 … then a documented deceptive-publishing case</h3>
-     <p>Use the same metric system and category when comparing quartiles. These examples are selected to show that <b>quartile and credibility are different questions</b>.</p>
-    </div>
-   </div>
-
-   <div class="quartile-case-grid">
-    <article class="journal-case q1case">
-     <div class="journal-case-top"><span class="quartile-label">Q1</span><span class="country-label">Singapore</span></div>
-     <h4>RELC Journal</h4>
-     <p><b>2024 SJR:</b> Q1 in Education and Q1 in Linguistics & Language. Published by SAGE for SEAMEO RELC in Singapore.</p>
-     <p class="case-lesson"><b>Reading lesson:</b> A regional Q1 example does not make every article automatically strong. Article-level evidence still matters.</p>
-     <div class="case-links"><a target="_blank" rel="noopener" href="https://journals.sagepub.com/home/rel">Journal ↗</a><a target="_blank" rel="noopener" href="https://www.relc.org.sg/our-publications/">SEAMEO RELC ↗</a></div>
-    </article>
-
-    <article class="journal-case q2case">
-     <div class="journal-case-top"><span class="quartile-label">Q2</span><span class="country-label">Indonesia</span></div>
-     <h4>Infinity Journal</h4>
-     <p><b>2025 SJR Education:</b> Q2. A mathematics-education journal published in Indonesia with a stated double-blind review process.</p>
-     <p class="case-lesson"><b>Reading lesson:</b> Q2 is not “almost Q1 quality”. It is a journal-level position for a specific year/category.</p>
-     <div class="case-links"><a target="_blank" rel="noopener" href="https://e-journal.stkipsiliwangi.ac.id/index.php/infinity/index">Journal ↗</a><a target="_blank" rel="noopener" href="https://www.scimagojr.com/journalrank.php?category=3304&amp;country=ID">Verify in SCImago ↗</a></div>
-    </article>
-
-    <article class="journal-case q3case">
-     <div class="journal-case-top"><span class="quartile-label">Q3</span><span class="country-label">Indonesia</span></div>
-     <h4>International Journal of Evaluation and Research in Education</h4>
-     <p><b>2025 SJR Education:</b> Q3, SJR 0.276. Published in Indonesia by the Institute of Advanced Engineering and Science.</p>
-     <p class="case-lesson"><b>Reading lesson:</b> Lower quartile does not mean deceptive publishing. Check article quality, editorial transparency and current indexing separately.</p>
-     <div class="case-links"><a target="_blank" rel="noopener" href="https://ijere.iaescore.com/">Journal ↗</a><a target="_blank" rel="noopener" href="https://www.scimagojr.com/journalrank.php?category=3304&country=ID">Verify in SCImago ↗</a></div>
-    </article>
-
-    <article class="journal-case q4case">
-     <div class="journal-case-top"><span class="quartile-label">Q4</span><span class="country-label">Malaysia</span></div>
-     <h4>Malaysian Online Journal of Educational Management</h4>
-     <p><b>2025 SJR Education:</b> Q4, SJR 0.184. It is published by the Faculty of Education, Universiti Malaya, and describes anonymous peer review.</p>
-     <p class="case-lesson"><b>Reading lesson:</b> This is the key counterexample to “Q4 = predatory”. Quartile rank and publishing integrity are different constructs.</p>
-     <div class="case-links"><a target="_blank" rel="noopener" href="https://mojem.um.edu.my/">Journal ↗</a><a target="_blank" rel="noopener" href="https://www.scimagojr.com/journalrank.php?category=3304&amp;country=MY">Verify in SCImago ↗</a></div>
-    </article>
-   </div>
-
-   <div class="category-warning">
-    <b>Important complication:</b> a journal can have different quartiles in different categories. For example, Malaysian Journal of Learning and Instruction has been reported with a higher “best quartile” than its Education-category quartile. Therefore, students should write <i>metric + year + category + quartile</i>, not just “this is a Q1 journal”.
-   </div>
-
-   <div class="documented-cases">
-    <article class="warning-case">
-     <div class="warning-head"><span class="warning-label">Historical documented case</span><span>Indonesia-linked authors</span></div>
-     <h4>Journal of Language and Literature / Progress Publishing Company</h4>
-     <p>Uli Kozok's documented case study reported several warning signs: listed editorial-board members who said they had not agreed to serve, a compulsory “subscription” functioning as a publication fee, and articles with obvious language/quality-control problems.</p>
-     <div class="error-samples">
-      <span>“The paperincludes linguistic studyof…”</span>
-      <span>“cluture”</span>
-      <span>“morphems”</span>
-      <span>“try to defense themselves”</span>
-     </div>
-     <p class="case-lesson"><b>Reading lesson:</b> spelling/grammar errors are not a standalone verdict, but repeated language errors plus editorial-board, fee and review irregularities form a stronger pattern.</p>
-     <a class="ref-link" target="_blank" rel="noopener" href="https://ulikozok.com/research/publications/predatory-journals/predatory_publishing-a_case_story/">Read the documented case ↗</a>
-    </article>
-
-    <article class="warning-case">
-     <div class="warning-head"><span class="warning-label">Peer-reviewed case study</span><span>Indonesia-based publisher</span></div>
-     <h4>Global International Journal of Innovative Research (GIJIR)</h4>
-     <p>A 2025 peer-reviewed case study described a fake AI-generated article published under the researcher's name. The paper notes that the journal had a valid ISSN, Crossref DOIs and Google Scholar presence, yet reported additional evidence that the authors said <b>suggested predatory publishing</b>. The publisher was traced to Lombok Tengah, Indonesia.</p>
-     <p class="case-lesson"><b>Reading lesson:</b> DOI + ISSN + Google Scholar are not sufficient credibility tests. Verification must extend to editorial practice, authorship integrity, indexing and transparency.</p>
-     <a class="ref-link" target="_blank" rel="noopener" href="https://doi.org/10.1186/s41073-025-00165-z">Open the peer-reviewed case study ↗</a>
-    </article>
-   </div>
-  </div>
-
-  <div class="card" style="margin-top:22px">
-   <h3>Predatory or deceptive publishing: look for a pattern</h3>
-   <p>A single red flag is not a verdict. Concern increases when several deceptive or non-transparent practices appear together.</p>
-   <div class="grid three">
-    <div><span class="pill">Indexing</span><p>False or misleading indexing claims, invented metrics, or badges that cannot be independently verified.</p></div>
-    <div><span class="pill">Review</span><p>Implausibly fast or unclear peer review, guaranteed acceptance, or no explanation of the editorial process.</p></div>
-    <div><span class="pill">Transparency</span><p>Hidden or changing fees, unverifiable editorial board information, unclear ownership or contact details.</p></div>
-   </div>
-   <div class="keyidea"><strong>Important caution.</strong> Open access, APCs, a new journal, Q4 status, or non-Scopus status do not by themselves prove that a journal is predatory.</div>
-  </div>
-
-  <div style="margin-top:30px">
-   <h3>Journal Detective</h3>
-   <p>These are fictional journals. Classify the evidence shown, not the name.</p>
-   <div class="detector" id="journalDetector"></div>
-  </div>
-
-  <div class="card" style="margin-top:28px">
-   <h3>Source Credibility Decision Path</h3>
-   <p>Click each stage in order. The goal is a defensible reading decision, not a simplistic numeric score.</p>
-   <div class="decision" id="decisionPath">
-    <button class="dstep" data-d="1">1<br>Source type</button>
-    <button class="dstep" data-d="2">2<br>Claim purpose</button>
-    <button class="dstep" data-d="3">3<br>Author & venue</button>
-    <button class="dstep" data-d="4">4<br>Peer review</button>
-    <button class="dstep" data-d="5">5<br>Verify indexing</button>
-    <button class="dstep" data-d="6">6<br>Metrics in context</button>
-    <button class="dstep" data-d="7">7<br>Article evidence</button>
-   </div>
-   <div class="decision-output" id="decisionOutput">Start with Stage 1.</div>
-  </div>
-
-  <div class="printcard">
-   <h3>Source Credibility Check Card</h3>
-   <div class="grid two">
-    <div><b>Article-level</b><br>What is the claim? What evidence supports it? Are the methods and limitations visible?</div>
-    <div><b>Venue-level</b><br>Can the peer-review, publisher, ISSN, indexing claim and editorial information be independently verified?</div>
-    <div><b>Metric-level</b><br>Which system, year and subject category produced the quartile or ranking?</div>
-    <div><b>Decision</b><br>Use confidently, use with qualification, verify further, or do not rely on this claim yet.</div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="section alt" id="synthesis">
- <div class="wrap">
-  <span class="kicker">5. Multi-text synthesis lab</span>
-  <h2>Do not stack summaries. Build relationships.</h2>
-  <p class="section-intro">A synthesis explains what sources collectively show, where they differ and how much each source changes the overall conclusion.</p>
-
-  <div class="linked-reading">
-   <div class="linked-reading-copy">
-    <span class="example-badge">Explore the research used in these notes</span>
-    <h3>Four studies to connect reading, source use and synthesis</h3>
-    <p>You do not need to read every article from beginning to end. Start with the abstract, identify the research purpose and method, then decide which article can support which kind of claim.</p>
-   </div>
-   <div class="linked-reading-grid">
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jeap.2016.06.002"><b>Cumming, Lai & Cho (2016)</b><span>Synthesised 69 empirical studies on students' writing from sources. Useful for seeing how a review integrates findings across a research field.</span><em>Open article ↗</em></a>
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.asw.2011.09.002"><b>Plakans & Gebril (2012)</b><span>Investigated how undergraduates used source texts in an integrated reading-to-write task, combining questionnaire, think-aloud and interview evidence.</span><em>Open article ↗</em></a>
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jslw.2012.03.003"><b>Shi (2012)</b><span>Examined student and instructor views of paraphrasing, summarising, translation and source acknowledgement. Useful for analysing how source use depends on context and disciplinary expectations.</span><em>Open article ↗</em></a>
-    <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jslw.2010.06.002"><b>Wette (2010)</b><span>Evaluated learning after explicit instruction in writing using sources. Use it to connect reading strategies with teachable source-use practices.</span><em>Open article ↗</em></a>
-   </div>
-  </div>
-
-  <div class="sourcecards">
-   <div class="sourcecard"><b>Source A</b><p>Criterion-guided peer review was associated with more substantive revision in one teacher-education class.</p><span class="pill">Outcome pattern</span></div>
-   <div class="sourcecard"><b>Source B</b><p>Students reported that specific criteria made comments easier to interpret and act on.</p><span class="pill">Learner explanation</span></div>
-   <div class="sourcecard"><b>Source C</b><p>Criterion use required modelling and class time before students applied it consistently.</p><span class="pill">Feasibility qualification</span></div>
-  </div>
-
-  <div class="grid two">
-   <div class="card matrix">
-    <h3>Relationship matrix</h3>
-    <table>
-     <tr><th>Source</th><th>Main contribution</th><th>Relationship</th></tr>
-     <tr><td>A</td><td>Reports an outcome pattern</td><td>Baseline claim</td></tr>
-     <tr><td>B</td><td>Explains why criteria may help</td><td>Extends A</td></tr>
-     <tr><td>C</td><td>Shows implementation demands</td><td>Qualifies A + B</td></tr>
-    </table>
-   </div>
-   <div class="card">
-    <h3>Synthesis Builder</h3>
-    <p>Which sentence genuinely integrates the source set?</p>
-    <div class="synthesis-options" id="synthOptions">
-     <button class="synth" data-good="0">Source A found revision gains. Source B discussed criteria. Source C discussed modelling.</button>
-     <button class="synth" data-good="1">Criterion-guided peer review may support substantive revision because clearer criteria can make comments more actionable, although the benefit depends on modelling and sufficient class time.</button>
-     <button class="synth" data-good="0">All three sources prove that criterion-guided peer review causes better writing in all contexts.</button>
-    </div>
-    <div class="feedback" id="synthFeedback"></div>
-   </div>
-  </div>
-  <div class="keyidea"><strong>Six-step routine:</strong> write the synthesis question → extract relevant claims/evidence → group by concept → label relationships → draft a combined statement with attribution → check that disagreement and scope have not disappeared.</div>
- </div>
-</section>
-
-<section class="section" id="article-lab">
- <div class="wrap">
-  <span class="kicker">6. Article application lab</span>
-  <h2>Apply every Topic 3 reading skill to one real academic article.</h2>
-  <p class="section-intro">Use Jude Tan's conference paper on assessment moderation as the common text. The questions move from identifying text structure to analysing evidence, source relationships, writer stance, summary and synthesis.</p>
-
-  <div class="article-source-card">
-   <div>
-    <span class="example-badge">Core reading</span>
-    <h3>Incorporating Assessment Moderation in the Malaysian Classroom-Based Assessment (CBA) Teacher Training Module</h3>
-    <p><b>Tan (2023)</b>, Proceedings of the 3rd International Conference on Education and Technology (ICETECH 2022), pp. 323–336.</p>
-    <p class="note">Suggested approach: read the abstract first, scan the headings and figures, then return to relevant sections while answering. The task is not to memorise the article, but to apply academic reading strategies to it.</p>
-   </div>
-   <div class="article-source-actions">
-    <a class="btn primary" target="_blank" rel="noopener" href="https://www.atlantis-press.com/proceedings/icetech-22/125989122">Open article page ↗</a>
-    <a class="btn secondary" target="_blank" rel="noopener" href="https://www.atlantis-press.com/article/125989122.pdf">Open PDF ↗</a>
-    <a class="btn secondary" target="_blank" rel="noopener" href="https://doi.org/10.2991/978-2-38476-056-5_35">Open DOI ↗</a>
-   </div>
-  </div>
-
-  <div class="skill-map">
-   <span>Linear / non-linear texts</span><span>Text type</span><span>Fact / opinion</span><span>Bias / objectivity</span>
-   <span>Arguments</span><span>Tone / purpose / POV</span><span>Text processing</span><span>Linking across texts</span>
-   <span>Summarising</span><span>Synthesising</span><span>Source credibility</span>
-  </div>
-
-  <div class="quiz-wrap article-quiz-wrap">
-   <div class="quiz-card">
-    <div class="quiz-progress"><span id="articleQuizProgress"></span></div>
-    <div id="articleQuizArea"></div>
-   </div>
-   <aside class="score-card article-score-card">
-    <span>Article lab score</span><strong id="articleScore">0 / 20</strong>
-    <p id="articleScoreMsg">Use the article as evidence. Re-read strategically when needed.</p>
-    <button class="btn secondary" id="restartArticleQuiz">Restart article lab</button>
-   </aside>
-  </div>
- </div>
-</section>
-
-<section class="section alt" id="challenge">
- <div class="wrap">
-  <span class="kicker">7. Challenge quiz</span>
-  <h2>Can you defend your reading decisions?</h2>
-  <p class="section-intro">Ten questions, instant explanations. Your progress is stored only in this browser.</p>
-  <div class="quiz-wrap">
-   <div class="quiz-card">
-    <div class="quiz-progress"><span id="quizProgress"></span></div>
-    <div id="quizArea"></div>
-   </div>
-   <aside class="score-card">
-    <span>Current score</span><strong id="score">0 / 10</strong>
-    <p id="scoreMsg">Answer the questions using evidence, not shortcuts.</p>
-    <button class="btn secondary" id="restartQuiz">Restart quiz</button>
-   </aside>
-  </div>
- </div>
-</section>
-
-<section class="section alt" id="resources">
- <div class="wrap">
-  <span class="kicker">8. Verification tools</span>
-  <h2>Check the evidence at the source.</h2>
-  <p class="section-intro">These tools answer different questions. None of them, by itself, can prove that an individual article is methodologically strong.</p>
-  <div class="resource-grid">
-   <a class="resource" target="_blank" rel="noopener" href="https://www.elsevier.com/products/scopus/content"><b>Scopus source coverage</b><span>Download the official source-title list to verify coverage.</span></a>
-   <a class="resource" target="_blank" rel="noopener" href="https://www.scimagojr.com/"><b>SCImago SJR</b><span>Explore SJR rankings and subject-category quartiles.</span></a>
-   <a class="resource" target="_blank" rel="noopener" href="https://doaj.org/"><b>DOAJ</b><span>Check open-access journal information and transparency criteria.</span></a>
-   <a class="resource" target="_blank" rel="noopener" href="https://thinkchecksubmit.org/journals/"><b>Think. Check. Submit.</b><span>Use a due-diligence checklist for journal and publisher trust.</span></a>
-  </div>
-
-  <div class="verification-example">
-   <div>
-    <span class="example-badge">Verification example</span>
-    <h3>A journal says “Indexed in Scopus”. What do you actually do?</h3>
-   </div>
-   <ol>
-    <li>Copy the journal's exact title and ISSN.</li>
-    <li>Search the official Scopus Sources record, not the journal's own badge.</li>
-    <li>Check publisher, subject area and coverage years. If coverage is discontinued, do not describe current issues as automatically covered.</li>
-    <li>If you quote a quartile, state the system, year and subject category. Do not turn a journal-level quartile into an article-level quality score.</li>
-   </ol>
-   <div class="mini-links">
-    <a target="_blank" rel="noopener" href="https://www.elsevier.com/en-gb/products/scopus/content">Elsevier: Scopus content & source-title guidance ↗</a>
-    <a target="_blank" rel="noopener" href="https://thinkchecksubmit.org/journals/">Think. Check. Submit. journal checklist ↗</a>
-   </div>
-  </div>
-
-  <h3 style="margin-top:34px">Selected references</h3>
-  <div class="refs">
-   <p class="ref">Afflerbach, P., Pearson, P. D., & Paris, S. G. (2008). Clarifying differences between reading skills and reading strategies. <i>The Reading Teacher, 61</i>(5), 364–373. <a target="_blank" rel="noopener" href="https://doi.org/10.1598/RT.61.5.1">DOI ↗</a></p>
-   <p class="ref">Bråten, I., Strømsø, H. I., & Britt, M. A. (2009). Trust matters: Examining the role of source evaluation in students' construction of meaning within and across multiple texts. <i>Reading Research Quarterly, 44</i>(1), 6–28. <a target="_blank" rel="noopener" href="https://doi.org/10.1598/RRQ.44.1.1">DOI ↗</a></p>
-   <p class="ref">Cumming, A., Lai, C., & Cho, H. (2016). Students' writing from sources for academic purposes: A synthesis of recent research. <i>Journal of English for Academic Purposes, 23</i>, 47–58. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jeap.2016.06.002">DOI ↗</a></p>
-   <p class="ref">Cukier, S., Lalu, M., Bryson, G. L., Cobey, K. D., Grudniewicz, A., & Moher, D. (2020). Defining predatory journals and responding to the threat they pose. <i>BMJ Open, 10</i>(2), e035561. <a target="_blank" rel="noopener" href="https://doi.org/10.1136/bmjopen-2019-035561">Open article ↗</a></p>
-   <p class="ref">Grabe, W., & Stoller, F. L. (2020). <i>Teaching and researching reading</i> (3rd ed.). Routledge. <a target="_blank" rel="noopener" href="https://www.routledge.com/Teaching-and-Researching-Reading/Grabe-Stoller/p/book/9781138847941">Publisher page ↗</a></p>
-   <p class="ref">Grudniewicz, A., et al. (2019). Predatory journals: No definition, no defence. <i>Nature, 576</i>, 210–212. <a target="_blank" rel="noopener" href="https://doi.org/10.1038/d41586-019-03759-y">Nature ↗</a></p>
-   <p class="ref">Hyland, K. (2005). Stance and engagement: A model of interaction in academic discourse. <i>Discourse Studies, 7</i>(2), 173–192. <a target="_blank" rel="noopener" href="https://doi.org/10.1177/1461445605050365">DOI ↗</a></p>
-   <p class="ref">List, A., & Alexander, P. A. (2019). Toward an integrated framework of multiple text use. <i>Educational Psychologist, 54</i>(1), 20–39. <a target="_blank" rel="noopener" href="https://doi.org/10.1080/00461520.2018.1505514">DOI ↗</a></p>
-   <p class="ref">Plakans, L., & Gebril, A. (2012). A close investigation into source use in integrated second language writing tasks. <i>Assessing Writing, 17</i>(1), 18–34. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.asw.2011.09.002">DOI ↗</a></p>
-   <p class="ref">Shamseer, L., et al. (2017). Potential predatory and legitimate biomedical journals: Can you tell the difference? <i>BMC Medicine, 15</i>, 28. <a target="_blank" rel="noopener" href="https://doi.org/10.1186/s12916-017-0785-9">Open article ↗</a></p>
-   <p class="ref">Shi, L. (2012). Rewriting and paraphrasing source texts in second language writing. <i>Journal of Second Language Writing, 21</i>(2), 134–148. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jslw.2012.03.003">DOI ↗</a></p>
-   <p class="ref">Toulmin, S. E. (2003). <i>The uses of argument</i> (Updated ed.). Cambridge University Press. <a target="_blank" rel="noopener" href="https://doi.org/10.1017/CBO9780511840005">Publisher/DOI ↗</a></p>
-   <p class="ref">Wette, R. (2010). Evaluating student learning in a university-level EAP unit on writing using sources. <i>Journal of Second Language Writing, 19</i>(3), 158–177. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.jslw.2010.06.002">DOI ↗</a></p>
-  </div>
- </div>
-</section>
-</main>
-
-<footer class="footer">
- <div class="wrap">
-  <strong>TSLB1114 · English Language Skills in Academic Context</strong>
-  <p>Topic 3: Academic Reading · Jude Tan · Institut Pendidikan Guru Kampus Rajang</p>
-  <p class="note" style="color:#aac0ca">Designed as an exploratory learning companion. Database status and journal metrics can change, so students should verify current information directly when it matters.</p>
- </div>
-</footer>
-
-<script src="app.js"></script>
+  </footer>
 </body>
 </html>
